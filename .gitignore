@@ -133,7 +133,6 @@ dist
 docs/.vitepress/dist
 docs/.vitepress/cache
 
-package-lock.json
 *.env
 *.token
 
