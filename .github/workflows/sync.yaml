@@ -56,16 +56,40 @@ jobs:
 
       - name: 配置Git用户名邮箱
         run: |
-          git config --global user.name "1874"
-          git config --global user.email "me@mail.1874.cool"
+          git config --global user.name "zhoujiayingvana"
+          git config --global user.email "1147083244@qq.com"
 
       - name: 提交拉取的文档到GitHub仓库
         run: |
           echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
           git add .
           git commit -m "Refresh elog.cache.json" -a
-
+          
       - name: 推送文档到仓库
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 设置 Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Build with VitePress
+        run: npm run docs:build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+ # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
