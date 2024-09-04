@@ -1,0 +1,176 @@
+{
+  "docs": [
+    {
+      "id": 183924267,
+      "doc_id": "kk6w5rn88m2x4zgc",
+      "updated": 1724682759000,
+      "properties": {
+        "title": "StarRocks",
+        "urlname": "kk6w5rn88m2x4zgc",
+        "date": "2024-08-26 22:32:21",
+        "updated": "2024-08-26 22:32:39"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "kk6w5rn88m2x4zgc"
+        }
+      ],
+      "realName": "kk6w5rn88m2x4zgc",
+      "relativePath": "\\kk6w5rn88m2x4zgc.md",
+      "docPath": "./docs/docs-shorturl"
+    },
+    {
+      "id": 183201378,
+      "doc_id": "uappyu0nvbdb6p5m",
+      "updated": 1724221609000,
+      "properties": {
+        "title": "Docker compose",
+        "urlname": "uappyu0nvbdb6p5m",
+        "date": "2024-08-21 14:18:28",
+        "updated": "2024-08-21 14:26:49",
+        "description": "更新某个应用背景：一组应用 stop 重启，启动docker-complse.yml 某个初始化资源重复创建导致启动失败，需要注释掉这条语句。解决方式：停止容器 docker-compose stop 应用名（别名）修改 docker-compose.yml 文件启动 docker-compo..."
+      },
+      "catalog": [
+        {
+          "title": "Docker",
+          "doc_id": "uappyu0nvbdb6p5m"
+        }
+      ],
+      "realName": "uappyu0nvbdb6p5m",
+      "relativePath": "\\uappyu0nvbdb6p5m.md",
+      "docPath": "./docs/docs-shorturl"
+    },
+    {
+      "id": 178851740,
+      "doc_id": "nu2f6xigygdp12n3",
+      "updated": 1721566631000,
+      "properties": {
+        "title": "Docker",
+        "urlname": "nu2f6xigygdp12n3",
+        "date": "2024-07-21 20:56:59",
+        "updated": "2024-07-21 20:57:11"
+      },
+      "catalog": [],
+      "realName": "nu2f6xigygdp12n3",
+      "relativePath": "\\nu2f6xigygdp12n3.md",
+      "docPath": "./docs/docs-shorturl"
+    },
+    {
+      "id": 176198065,
+      "doc_id": "nqmh1oc56skmphz4",
+      "updated": 1719927218000,
+      "properties": {
+        "title": "大数据学习",
+        "urlname": "nqmh1oc56skmphz4",
+        "date": "2024-07-02 19:13:04",
+        "updated": "2024-07-02 21:33:38",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1719920162537-5ae3472c-ac73-4d6b-8a5f-dad2c4a8e43b.png",
+        "description": "概念数据仓库：针对读取操作进行优化的关系型数据库OLAP 模型：是一种聚合类型的数据存储，它针对分析工作负载进行了优化。 数据聚合跨不同级别的维度，这样你就可以向上/向下钻取以查看多个层次结构级别的聚合；例如，按区域、城市或单个地址查找总销售额。 由于 OLAP 数据是预先聚合的，因此可以快速..."
+      },
+      "catalog": [],
+      "realName": "nqmh1oc56skmphz4",
+      "relativePath": "\\nqmh1oc56skmphz4.md",
+      "docPath": "./docs/docs-shorturl"
+    },
+    {
+      "id": 178851766,
+      "doc_id": "zr5ze95k8i03xlhe",
+      "updated": 1724744846000,
+      "properties": {
+        "title": "语法",
+        "urlname": "zr5ze95k8i03xlhe",
+        "date": "2024-07-21 20:57:16",
+        "updated": "2024-08-27 15:47:26",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1721570240898-04ac13f5-1133-4733-9570-3d8d30d41871.png",
+        "description": "启动和校验# 启动 systemctl start docker  # 停止 systemctl stop docker  # 重启 systemctl restart docker  # 设置开机自启动 systemctl enable docker  # 校验 docker ps  #查看..."
+      },
+      "catalog": [
+        {
+          "title": "Docker",
+          "doc_id": "zr5ze95k8i03xlhe"
+        }
+      ],
+      "realName": "zr5ze95k8i03xlhe",
+      "relativePath": "\\zr5ze95k8i03xlhe.md",
+      "docPath": "./docs/docs-shorturl"
+    }
+  ],
+  "catalog": [
+    {
+      "type": "DOC",
+      "title": "Docker",
+      "uuid": "X52iPYRX02O8gXT5",
+      "url": "nu2f6xigygdp12n3",
+      "prev_uuid": "",
+      "sibling_uuid": "IrpnG32GwUNyMBO4",
+      "child_uuid": "oXsGoIvOXLM4Cwf3",
+      "parent_uuid": "",
+      "doc_id": 178851740,
+      "level": 0,
+      "id": 178851740,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "Docker compose",
+      "uuid": "oXsGoIvOXLM4Cwf3",
+      "url": "uappyu0nvbdb6p5m",
+      "prev_uuid": "X52iPYRX02O8gXT5",
+      "sibling_uuid": "L6XZ0xWoZvMvRjcV",
+      "child_uuid": "",
+      "parent_uuid": "X52iPYRX02O8gXT5",
+      "doc_id": 183201378,
+      "level": 1,
+      "id": 183201378,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "语法",
+      "uuid": "L6XZ0xWoZvMvRjcV",
+      "url": "zr5ze95k8i03xlhe",
+      "prev_uuid": "oXsGoIvOXLM4Cwf3",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "X52iPYRX02O8gXT5",
+      "doc_id": 178851766,
+      "level": 1,
+      "id": 178851766,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "大数据学习",
+      "uuid": "IrpnG32GwUNyMBO4",
+      "url": "nqmh1oc56skmphz4",
+      "prev_uuid": "X52iPYRX02O8gXT5",
+      "sibling_uuid": "",
+      "child_uuid": "vybl0kqoMPyu9vl1",
+      "parent_uuid": "",
+      "doc_id": 176198065,
+      "level": 0,
+      "id": 176198065,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "StarRocks",
+      "uuid": "vybl0kqoMPyu9vl1",
+      "url": "kk6w5rn88m2x4zgc",
+      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "IrpnG32GwUNyMBO4",
+      "doc_id": 183924267,
+      "level": 1,
+      "id": 183924267,
+      "open_window": 1,
+      "visible": 1
+    }
+  ]
+}

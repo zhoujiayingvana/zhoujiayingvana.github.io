@@ -1,0 +1,71 @@
+name: Sync Docs
+
+on:
+  # 允许手动push触发
+  push:
+   branches:
+     - master
+  # 允许外部仓库事件触发
+  repository_dispatch:
+    types:
+      - deploy
+  # 允许你从 Actions 选项卡手动运行此工作流程
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v4
+
+      - name: 安装node环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: 安装依赖
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install --prod
+
+      - name: 拉取文档
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+          YUQUE_USERNAME: ${{ secrets.YUQUE_USERNAME }}
+          YUQUE_PASSWORD: ${{ secrets.YUQUE_PASSWORD }}
+          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
+          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
+        run: |
+          npm run elog:sync
+#          npm run elog:sync-short
+
+      - name: 配置Git用户名邮箱
+        run: |
+          git config --global user.name "1874"
+          git config --global user.email "me@mail.1874.cool"
+
+      - name: 提交拉取的文档到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
+          git add .
+          git commit -m "Refresh elog.cache.json" -a
+
+      - name: 推送文档到仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
