@@ -72,8 +72,8 @@ jobs:
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
       
-      # - name: 设置 Pages
-      #   uses: actions/configure-pages@v4
+      - name: 设置 Pages
+        uses: actions/configure-pages@v4
       
       - name: Build with VitePress
         run: npm run docs:build
@@ -87,7 +87,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://github.com/zhoujiayingvana/zhoujiayingvana.github.io.git
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
     name: Deploy
