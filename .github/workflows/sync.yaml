@@ -55,24 +55,25 @@ jobs:
 #           npm run elog:sync
 # #          npm run elog:sync-short
 
-      - name: 配置Git用户名邮箱
-        run: |
-          git config --global user.name "zhoujiayingvana"
-          git config --global user.email "1147083244@qq.com"
-
-      - name: 设置 Pages
-        uses: actions/configure-pages@v4
-
-      - name: 提交拉取的文档到GitHub仓库
-        run: |
-          echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
-          git add .
-          git commit -m "Refresh elog.cache.json" -a
+      # - name: 配置Git用户名邮箱
+      #   run: |
+      #     git config --global user.name "zhoujiayingvana"
+      #     git config --global user.email "1147083244@qq.com"
           
-      - name: 推送文档到仓库
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: 提交拉取的文档到GitHub仓库
+      #   run: |
+      #     echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
+      #     git add .
+      #     git commit -m "Refresh elog.cache.json" -a
+          
+      # - name: 推送文档到仓库
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      # - name: 设置 Pages
+      #   uses: actions/configure-pages@v4
       
       - name: Build with VitePress
         run: npm run docs:build
