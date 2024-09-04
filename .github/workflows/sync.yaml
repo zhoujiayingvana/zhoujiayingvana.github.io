@@ -60,6 +60,9 @@ jobs:
           git config --global user.name "zhoujiayingvana"
           git config --global user.email "1147083244@qq.com"
 
+      - name: 设置 Pages
+        uses: actions/configure-pages@v4
+
       - name: 提交拉取的文档到GitHub仓库
         run: |
           echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
@@ -70,9 +73,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: 设置 Pages
-        uses: actions/configure-pages@v4
       
       - name: Build with VitePress
         run: npm run docs:build
