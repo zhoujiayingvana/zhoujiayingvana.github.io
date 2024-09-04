@@ -87,7 +87,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://github.com/zhoujiayingvana/zhoujiayingvana.github.io.git
     needs: build
     runs-on: ubuntu-latest
     name: Deploy
