@@ -12,7 +12,7 @@ hero:
       link: /docs/catalog
     - theme: alt
       text: GitHub
-      link: https://github.com/elog-x/yuque-vitepress
+      link: https://github.com/zhoujiayingvana/zhoujiayingvana.github.io
 
 
 ---

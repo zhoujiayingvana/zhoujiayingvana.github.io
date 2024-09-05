@@ -72,8 +72,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       
-      # - name: 设置 Pages
-      #   uses: actions/configure-pages@v4
+      - name: 设置 Pages
+        uses: actions/configure-pages@v4
       
       - name: Build with VitePress
         run: npm run docs:build
