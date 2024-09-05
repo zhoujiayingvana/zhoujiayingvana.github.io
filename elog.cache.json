@@ -96,58 +96,349 @@
       "docPath": "docs\\docs"
     },
     {
-      "id": 185208366,
-      "doc_id": "smpevhgg85v1sfy2",
-      "updated": 1725459137000,
+      "id": 185353480,
+      "doc_id": "gph9ectq5dfk1nwm",
+      "updated": 1725536135000,
       "properties": {
-        "title": "Test",
-        "urlname": "smpevhgg85v1sfy2",
-        "date": "2024-09-04 22:12:09",
-        "updated": "2024-09-04 22:12:17"
+        "title": "MySQL",
+        "urlname": "gph9ectq5dfk1nwm",
+        "date": "2024-09-05 19:35:31",
+        "updated": "2024-09-05 19:35:35"
+      },
+      "catalog": [],
+      "realName": "MySQL",
+      "relativePath": "/MySQL.md",
+      "docPath": "docs/docs"
+    },
+    {
+      "id": 185353465,
+      "doc_id": "wuoar5w6xg1fqvwp",
+      "updated": 1725536124000,
+      "properties": {
+        "title": "数据类型",
+        "urlname": "wuoar5w6xg1fqvwp",
+        "date": "2024-09-05 19:35:23",
+        "updated": "2024-09-05 19:35:24",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1720709255900-90270b78-667d-4ae6-951a-1de627c83568.png",
+        "description": "数据类型整数类型基本和编程语言一致，多了几个长度拓展CHAR：性能高，定长，且最大只有255字符；VARCHAR：性能稍差，变长"
       },
       "catalog": [
         {
-          "title": "大数据学习",
-          "doc_id": "smpevhgg85v1sfy2"
-        },
-        {
-          "title": "StarRocks",
-          "doc_id": "smpevhgg85v1sfy2"
+          "title": "MySQL",
+          "doc_id": "wuoar5w6xg1fqvwp"
         }
       ],
-      "realName": "Test",
-      "relativePath": "\\大数据学习\\StarRocks\\Test.md",
-      "docPath": "docs\\docs\\大数据学习\\StarRocks"
+      "realName": "数据类型",
+      "relativePath": "/MySQL/数据类型.md",
+      "docPath": "docs/docs/MySQL"
+    },
+    {
+      "id": 185353464,
+      "doc_id": "wxwuv5b18ka2x09n",
+      "updated": 1725536124000,
+      "properties": {
+        "title": "基础语法",
+        "urlname": "wxwuv5b18ka2x09n",
+        "date": "2024-09-05 19:35:23",
+        "updated": "2024-09-05 19:35:24",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1720071416957-fa2fec97-0c5c-493b-b2ba-2f70166d9e85.png",
+        "description": "https://sqlfiddle.com/sql-server/online-compiler注释单行注释：--注释内容或者#注释内容多行注释：/*注释内容*/DDL语句-数据定义创建数据库、表、字段查询表创建表CREATE TABLE Product (   ProductID INT A..."
+      },
+      "catalog": [
+        {
+          "title": "MySQL",
+          "doc_id": "wxwuv5b18ka2x09n"
+        }
+      ],
+      "realName": "基础语法",
+      "relativePath": "/MySQL/基础语法.md",
+      "docPath": "docs/docs/MySQL"
+    },
+    {
+      "id": 185353116,
+      "doc_id": "gdb11fv2bgqd8ix6",
+      "updated": 1725535877000,
+      "properties": {
+        "title": "Linux",
+        "urlname": "gdb11fv2bgqd8ix6",
+        "date": "2024-09-05 19:31:07",
+        "updated": "2024-09-05 19:31:17"
+      },
+      "catalog": [],
+      "realName": "Linux",
+      "relativePath": "/Linux.md",
+      "docPath": "docs/docs"
+    },
+    {
+      "id": 55493953,
+      "doc_id": "hm784g",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "Screen",
+        "urlname": "hm784g",
+        "date": "2021-10-18 22:26:38",
+        "updated": "2024-09-05 19:32:58",
+        "description": "多窗口管理工具常用命令查看所有 sessionscreen -ls新建 sessionscreen -S yourname返回 sessionscreen -r yourname结束当前session并回到yourname这个sessionscreen -d -r yourname重命名（外部..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "hm784g"
+        }
+      ],
+      "realName": "Screen",
+      "relativePath": "/Linux/Screen.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 54107162,
+      "doc_id": "tmft6b",
+      "updated": 1725535942000,
+      "properties": {
+        "title": "常用命令",
+        "urlname": "tmft6b",
+        "date": "2021-09-25 17:28:25",
+        "updated": "2024-09-05 19:32:22",
+        "cover": "https://cdn.nlark.com/yuque/0/2021/png/2335953/1634128233023-51bfca5a-cf14-42b2-a17f-6c88ad930fe0.png",
+        "description": "系统查看版本（详细）：cat /proc/versionLinux version 4.15.0-154-generic (buildd@lcy01-amd64-011) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #161-Ubuntu..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "tmft6b"
+        }
+      ],
+      "realName": "常用命令",
+      "relativePath": "/Linux/常用命令.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 61906869,
+      "doc_id": "atxlru",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "文件传输",
+        "urlname": "atxlru",
+        "date": "2021-12-05 13:55:47",
+        "updated": "2024-09-05 19:32:58",
+        "description": "https://www.cnblogs.com/zzjdbk/p/14078298.htmlhttps://blog.csdn.net/weixin_39372979/article/details/81178616服务器之间文件传输。在原始服务器上输入指令：传输文件scp -P 22 本机文..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "atxlru"
+        }
+      ],
+      "realName": "文件传输",
+      "relativePath": "/Linux/文件传输.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 125475082,
+      "doc_id": "htpxtopwwfnyxeco",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "vim",
+        "urlname": "htpxtopwwfnyxeco",
+        "date": "2023-05-22 21:18:39",
+        "updated": "2024-09-05 19:32:58",
+        "description": "跳转第一行：gg在 Normal 模式下，输入 1G，然后按下回车键。这将光标移动到第一行。在 Normal 模式下，输入 :1，然后按下回车键。这将光标移动到第一行。搜索进入 Normal 模式：按下 Esc 键，确保你处于 Normal 模式。输入 /（斜杠）字符，紧接着输入你想要搜索的内..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "htpxtopwwfnyxeco"
+        }
+      ],
+      "realName": "vim",
+      "relativePath": "/Linux/vim.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 110051934,
+      "doc_id": "wuhhbzfl7ifm1xh1",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "创建用户",
+        "urlname": "wuhhbzfl7ifm1xh1",
+        "date": "2022-12-23 15:45:42",
+        "updated": "2024-09-05 19:32:58",
+        "description": "原理：https://p3terx.com/archives/add-normal-users-with-adduser-and-useradd.html创建root用户：https://blog.csdn.net/web13170611647/article/details/12642308..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "wuhhbzfl7ifm1xh1"
+        }
+      ],
+      "realName": "创建用户",
+      "relativePath": "/Linux/创建用户.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 97921312,
+      "doc_id": "iilf1v",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "Windows CMD",
+        "urlname": "iilf1v",
+        "date": "2022-10-25 16:10:19",
+        "updated": "2024-09-05 19:32:58",
+        "description": "换盘符： 盘符名称+冒号ls：dir/w：紧凑模式显示/b：只显示文件名/s：显示指定目录和所有子目录中的文件/ah：只显示隐藏文件/a：显示包括隐藏文件清除屏幕：cls复制：copy 路径\\文件名 路径\\文件名 ：把一个文件拷贝到另一个地方。移动：move 路径\\文件名 路径\\文件名 ：把一..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "iilf1v"
+        }
+      ],
+      "realName": "Windows CMD",
+      "relativePath": "/Linux/Windows CMD.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 55135741,
+      "doc_id": "icksgl",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "创建可执行脚本.sh",
+        "urlname": "icksgl",
+        "date": "2021-10-13 16:26:39",
+        "updated": "2024-09-05 19:32:58",
+        "description": "模板#!/bin/sh  export http_proxy=\"114.212.82.3:808\" # 两句话换行即可 export http_proxy=\"114.212.82.3:808\"说明开头要写 #!/bin/sh 或 #!/bin/bash，以标识为可执行脚本运行需要在当前窗口生效..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "icksgl"
+        }
+      ],
+      "realName": "创建可执行脚本.sh",
+      "relativePath": "/Linux/创建可执行脚本.sh.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 81172730,
+      "doc_id": "ef029n",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "文件权限",
+        "urlname": "ef029n",
+        "date": "2022-06-22 19:36:36",
+        "updated": "2024-09-05 19:32:58",
+        "cover": "https://cdn.nlark.com/yuque/0/2022/png/2335953/1655897951090-e84282f8-6c74-447d-bc02-b984c02c318c.png",
+        "description": "含义https://blog.csdn.net/weixin_63497480/article/details/1223087931.r:read就是读权限 --数字4表示w:write就是写权限 --数字2表示x:excute就是执行权限 --数字1表示2.读、写、运行三项权限可以用数字表示..."
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "ef029n"
+        }
+      ],
+      "realName": "文件权限",
+      "relativePath": "/Linux/文件权限.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 64306781,
+      "doc_id": "gfw42g",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "glob",
+        "urlname": "gfw42g",
+        "date": "2022-01-06 22:35:25",
+        "updated": "2024-09-05 19:32:58"
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "gfw42g"
+        }
+      ],
+      "realName": "glob",
+      "relativePath": "/Linux/glob.md",
+      "docPath": "docs/docs/Linux"
+    },
+    {
+      "id": 64698512,
+      "doc_id": "qttf9y",
+      "updated": 1725535978000,
+      "properties": {
+        "title": "权限管理",
+        "urlname": "qttf9y",
+        "date": "2022-01-12 10:38:47",
+        "updated": "2024-09-05 19:32:58",
+        "description": "修改用户密码：用户名jyzhou，密码zhoujiayingvanapasswd 用户名，然后输入两遍密码切换root权限https://blog.csdn.net/kzadmxz/article/details/74784337"
+      },
+      "catalog": [
+        {
+          "title": "Linux",
+          "doc_id": "qttf9y"
+        }
+      ],
+      "realName": "权限管理",
+      "relativePath": "/Linux/权限管理.md",
+      "docPath": "docs/docs/Linux"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "MySQL",
+      "uuid": "RxbKPuLvXwix3Cdl",
+      "url": "gph9ectq5dfk1nwm",
+      "prev_uuid": "",
+      "sibling_uuid": "X52iPYRX02O8gXT5",
+      "child_uuid": "uJ_vAFuwFGzgdEge",
+      "parent_uuid": "",
+      "doc_id": 185353480,
+      "level": 0,
+      "id": 185353480,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "基础语法",
+      "uuid": "uJ_vAFuwFGzgdEge",
+      "url": "wxwuv5b18ka2x09n",
+      "prev_uuid": "RxbKPuLvXwix3Cdl",
+      "sibling_uuid": "Zb0vPeIzrIgNwTK4",
+      "child_uuid": "",
+      "parent_uuid": "RxbKPuLvXwix3Cdl",
+      "doc_id": 185353464,
+      "level": 1,
+      "id": 185353464,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "数据类型",
+      "uuid": "Zb0vPeIzrIgNwTK4",
+      "url": "wuoar5w6xg1fqvwp",
+      "prev_uuid": "uJ_vAFuwFGzgdEge",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "RxbKPuLvXwix3Cdl",
+      "doc_id": 185353465,
+      "level": 1,
+      "id": 185353465,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "Docker",
       "uuid": "X52iPYRX02O8gXT5",
       "url": "nu2f6xigygdp12n3",
-      "prev_uuid": "",
+      "prev_uuid": "RxbKPuLvXwix3Cdl",
       "sibling_uuid": "IrpnG32GwUNyMBO4",
-      "child_uuid": "oXsGoIvOXLM4Cwf3",
+      "child_uuid": "L6XZ0xWoZvMvRjcV",
       "parent_uuid": "",
       "doc_id": 178851740,
       "level": 0,
       "id": 178851740,
-      "open_window": 1,
-      "visible": 0
-    },
-    {
-      "type": "DOC",
-      "title": "Docker compose",
-      "uuid": "oXsGoIvOXLM4Cwf3",
-      "url": "uappyu0nvbdb6p5m",
-      "prev_uuid": "X52iPYRX02O8gXT5",
-      "sibling_uuid": "L6XZ0xWoZvMvRjcV",
-      "child_uuid": "",
-      "parent_uuid": "X52iPYRX02O8gXT5",
-      "doc_id": 183201378,
-      "level": 1,
-      "id": 183201378,
       "open_window": 1,
       "visible": 1
     },
@@ -156,8 +447,8 @@
       "title": "语法",
       "uuid": "L6XZ0xWoZvMvRjcV",
       "url": "zr5ze95k8i03xlhe",
-      "prev_uuid": "oXsGoIvOXLM4Cwf3",
-      "sibling_uuid": "",
+      "prev_uuid": "X52iPYRX02O8gXT5",
+      "sibling_uuid": "oXsGoIvOXLM4Cwf3",
       "child_uuid": "",
       "parent_uuid": "X52iPYRX02O8gXT5",
       "doc_id": 178851766,
@@ -168,11 +459,26 @@
     },
     {
       "type": "DOC",
+      "title": "Docker compose",
+      "uuid": "oXsGoIvOXLM4Cwf3",
+      "url": "uappyu0nvbdb6p5m",
+      "prev_uuid": "L6XZ0xWoZvMvRjcV",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "X52iPYRX02O8gXT5",
+      "doc_id": 183201378,
+      "level": 1,
+      "id": 183201378,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "大数据学习",
       "uuid": "IrpnG32GwUNyMBO4",
       "url": "nqmh1oc56skmphz4",
       "prev_uuid": "X52iPYRX02O8gXT5",
-      "sibling_uuid": "",
+      "sibling_uuid": "EX9yYti9IEO_uPYq",
       "child_uuid": "vybl0kqoMPyu9vl1",
       "parent_uuid": "",
       "doc_id": 176198065,
@@ -188,7 +494,7 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "IrpnG32GwUNyMBO4",
       "sibling_uuid": "",
-      "child_uuid": "cI8hYnepdQSR3qeN",
+      "child_uuid": "",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
@@ -198,16 +504,166 @@
     },
     {
       "type": "DOC",
-      "title": "Test",
-      "uuid": "cI8hYnepdQSR3qeN",
-      "url": "smpevhgg85v1sfy2",
-      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "title": "Linux",
+      "uuid": "EX9yYti9IEO_uPYq",
+      "url": "gdb11fv2bgqd8ix6",
+      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "sibling_uuid": "",
+      "child_uuid": "ZdMUPuCoA9svofw4",
+      "parent_uuid": "",
+      "doc_id": 185353116,
+      "level": 0,
+      "id": 185353116,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "常用命令",
+      "uuid": "ZdMUPuCoA9svofw4",
+      "url": "tmft6b",
+      "prev_uuid": "EX9yYti9IEO_uPYq",
+      "sibling_uuid": "XT2FAw1_0PLwGeUN",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 54107162,
+      "level": 1,
+      "id": 54107162,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "权限管理",
+      "uuid": "XT2FAw1_0PLwGeUN",
+      "url": "qttf9y",
+      "prev_uuid": "ZdMUPuCoA9svofw4",
+      "sibling_uuid": "fguY06X0Pyi6Zi9P",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 64698512,
+      "level": 1,
+      "id": 64698512,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Screen",
+      "uuid": "fguY06X0Pyi6Zi9P",
+      "url": "hm784g",
+      "prev_uuid": "XT2FAw1_0PLwGeUN",
+      "sibling_uuid": "Ohn6D0OCk3l_FiXO",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 55493953,
+      "level": 1,
+      "id": 55493953,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "文件传输",
+      "uuid": "Ohn6D0OCk3l_FiXO",
+      "url": "atxlru",
+      "prev_uuid": "fguY06X0Pyi6Zi9P",
+      "sibling_uuid": "pTeQVNKogBTZmCHX",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 61906869,
+      "level": 1,
+      "id": 61906869,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "创建可执行脚本.sh",
+      "uuid": "pTeQVNKogBTZmCHX",
+      "url": "icksgl",
+      "prev_uuid": "Ohn6D0OCk3l_FiXO",
+      "sibling_uuid": "JDYroUjjy1jxrdbY",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 55135741,
+      "level": 1,
+      "id": 55135741,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "glob",
+      "uuid": "JDYroUjjy1jxrdbY",
+      "url": "gfw42g",
+      "prev_uuid": "pTeQVNKogBTZmCHX",
+      "sibling_uuid": "SuBJVaabTpQ7lytP",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 64306781,
+      "level": 1,
+      "id": 64306781,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "文件权限",
+      "uuid": "SuBJVaabTpQ7lytP",
+      "url": "ef029n",
+      "prev_uuid": "JDYroUjjy1jxrdbY",
+      "sibling_uuid": "_K8NKsNDJTWabc1w",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 81172730,
+      "level": 1,
+      "id": 81172730,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "创建用户",
+      "uuid": "_K8NKsNDJTWabc1w",
+      "url": "wuhhbzfl7ifm1xh1",
+      "prev_uuid": "SuBJVaabTpQ7lytP",
+      "sibling_uuid": "pGYJxSxIuULckmG5",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 110051934,
+      "level": 1,
+      "id": 110051934,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Windows CMD",
+      "uuid": "pGYJxSxIuULckmG5",
+      "url": "iilf1v",
+      "prev_uuid": "_K8NKsNDJTWabc1w",
+      "sibling_uuid": "YbzM8vTSlH8G2x2x",
+      "child_uuid": "",
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 97921312,
+      "level": 1,
+      "id": 97921312,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "vim",
+      "uuid": "YbzM8vTSlH8G2x2x",
+      "url": "htpxtopwwfnyxeco",
+      "prev_uuid": "pGYJxSxIuULckmG5",
       "sibling_uuid": "",
       "child_uuid": "",
-      "parent_uuid": "vybl0kqoMPyu9vl1",
-      "doc_id": 185208366,
-      "level": 2,
-      "id": 185208366,
+      "parent_uuid": "EX9yYti9IEO_uPYq",
+      "doc_id": 125475082,
+      "level": 1,
+      "id": 125475082,
       "open_window": 1,
       "visible": 1
     }
