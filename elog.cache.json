@@ -135,12 +135,12 @@
     {
       "id": 185353464,
       "doc_id": "wxwuv5b18ka2x09n",
-      "updated": 1725536124000,
+      "updated": 1726584676000,
       "properties": {
-        "title": "基础语法",
+        "title": "其他语法",
         "urlname": "wxwuv5b18ka2x09n",
         "date": "2024-09-05 19:35:23",
-        "updated": "2024-09-05 19:35:24",
+        "updated": "2024-09-17 22:51:16",
         "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1720071416957-fa2fec97-0c5c-493b-b2ba-2f70166d9e85.png",
         "description": "https://sqlfiddle.com/sql-server/online-compiler注释单行注释：--注释内容或者#注释内容多行注释：/*注释内容*/DDL语句-数据定义创建数据库、表、字段查询表创建表CREATE TABLE Product (   ProductID INT A..."
       },
@@ -150,8 +150,8 @@
           "doc_id": "wxwuv5b18ka2x09n"
         }
       ],
-      "realName": "基础语法",
-      "relativePath": "/MySQL/基础语法.md",
+      "realName": "其他语法",
+      "relativePath": "/MySQL/其他语法.md",
       "docPath": "docs/docs/MySQL"
     },
     {
@@ -416,6 +416,50 @@
       "realName": "转正答辩",
       "relativePath": "/文档/转正答辩.md",
       "docPath": "docs/docs/文档"
+    },
+    {
+      "id": 186851901,
+      "doc_id": "zu7ul3qe47dnmifp",
+      "updated": 1726588572000,
+      "properties": {
+        "title": "查询语法",
+        "urlname": "zu7ul3qe47dnmifp",
+        "date": "2024-09-17 20:41:01",
+        "updated": "2024-09-17 23:56:12",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1721828523839-36209985-35bd-430d-91f4-8475bf3f3e77.png",
+        "description": "基础语法总结非空 WHERE 字段名 is NOT NULL 或 WHERE NOT 字段名查询名字长度为2的员工：SELECT * FROM Employee WHERE name like '_ _';执行顺序：from, where, group by, having, select, ..."
+      },
+      "catalog": [
+        {
+          "title": "MySQL",
+          "doc_id": "zu7ul3qe47dnmifp"
+        }
+      ],
+      "realName": "查询语法",
+      "relativePath": "/MySQL/查询语法.md",
+      "docPath": "docs/docs/MySQL"
+    },
+    {
+      "id": 186853602,
+      "doc_id": "kkwioap2rlmky9gb",
+      "updated": 1726581733000,
+      "properties": {
+        "title": "函数",
+        "urlname": "kkwioap2rlmky9gb",
+        "date": "2024-09-17 21:12:47",
+        "updated": "2024-09-17 22:02:13",
+        "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1721830590830-c547cdc8-7203-4d82-955d-32df59532aac.png",
+        "description": "字符串函数数值函数日期函数select DATEDIFF(curdate(), entrydate) from emp; -- 查询员工入职天数 select DATE_ADD(now(), INTERVAL 10 YEAR); -- 当前时间加10年流程控制函数第三种的[expr]指代某个字..."
+      },
+      "catalog": [
+        {
+          "title": "MySQL",
+          "doc_id": "kkwioap2rlmky9gb"
+        }
+      ],
+      "realName": "函数",
+      "relativePath": "/MySQL/函数.md",
+      "docPath": "docs/docs/MySQL"
     }
   ],
   "catalog": [
@@ -426,7 +470,7 @@
       "url": "gph9ectq5dfk1nwm",
       "prev_uuid": "",
       "sibling_uuid": "X52iPYRX02O8gXT5",
-      "child_uuid": "uJ_vAFuwFGzgdEge",
+      "child_uuid": "S3FE3yIrimlfGzex",
       "parent_uuid": "",
       "doc_id": 185353480,
       "level": 0,
@@ -436,11 +480,26 @@
     },
     {
       "type": "DOC",
-      "title": "基础语法",
+      "title": "查询语法",
+      "uuid": "S3FE3yIrimlfGzex",
+      "url": "zu7ul3qe47dnmifp",
+      "prev_uuid": "RxbKPuLvXwix3Cdl",
+      "sibling_uuid": "uJ_vAFuwFGzgdEge",
+      "child_uuid": "",
+      "parent_uuid": "RxbKPuLvXwix3Cdl",
+      "doc_id": 186851901,
+      "level": 1,
+      "id": 186851901,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "其他语法",
       "uuid": "uJ_vAFuwFGzgdEge",
       "url": "wxwuv5b18ka2x09n",
-      "prev_uuid": "RxbKPuLvXwix3Cdl",
-      "sibling_uuid": "Zb0vPeIzrIgNwTK4",
+      "prev_uuid": "S3FE3yIrimlfGzex",
+      "sibling_uuid": "jnVUDHpoJUy5_89t",
       "child_uuid": "",
       "parent_uuid": "RxbKPuLvXwix3Cdl",
       "doc_id": 185353464,
@@ -451,10 +510,25 @@
     },
     {
       "type": "DOC",
+      "title": "函数",
+      "uuid": "jnVUDHpoJUy5_89t",
+      "url": "kkwioap2rlmky9gb",
+      "prev_uuid": "uJ_vAFuwFGzgdEge",
+      "sibling_uuid": "Zb0vPeIzrIgNwTK4",
+      "child_uuid": "",
+      "parent_uuid": "RxbKPuLvXwix3Cdl",
+      "doc_id": 186853602,
+      "level": 1,
+      "id": 186853602,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "数据类型",
       "uuid": "Zb0vPeIzrIgNwTK4",
       "url": "wuoar5w6xg1fqvwp",
-      "prev_uuid": "uJ_vAFuwFGzgdEge",
+      "prev_uuid": "jnVUDHpoJUy5_89t",
       "sibling_uuid": "",
       "child_uuid": "",
       "parent_uuid": "RxbKPuLvXwix3Cdl",
