@@ -420,12 +420,12 @@
     {
       "id": 186851901,
       "doc_id": "zu7ul3qe47dnmifp",
-      "updated": 1726588572000,
+      "updated": 1726762045000,
       "properties": {
         "title": "查询语法",
         "urlname": "zu7ul3qe47dnmifp",
         "date": "2024-09-17 20:41:01",
-        "updated": "2024-09-17 23:56:12",
+        "updated": "2024-09-20 00:07:25",
         "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1721828523839-36209985-35bd-430d-91f4-8475bf3f3e77.png",
         "description": "基础语法总结非空 WHERE 字段名 is NOT NULL 或 WHERE NOT 字段名查询名字长度为2的员工：SELECT * FROM Employee WHERE name like '_ _';执行顺序：from, where, group by, having, select, ..."
       },
