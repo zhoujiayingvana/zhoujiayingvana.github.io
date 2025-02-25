@@ -193,12 +193,12 @@
     {
       "id": 54107162,
       "doc_id": "tmft6b",
-      "updated": 1733644966000,
+      "updated": 1739155249000,
       "properties": {
         "title": "常用命令",
         "urlname": "tmft6b",
         "date": "2021-09-25 17:28:25",
-        "updated": "2024-12-08 16:02:46",
+        "updated": "2025-02-10 10:40:49",
         "cover": "https://cdn.nlark.com/yuque/0/2021/png/2335953/1634128233023-51bfca5a-cf14-42b2-a17f-6c88ad930fe0.png",
         "description": "系统查看版本（详细）：cat /proc/versionLinux version 4.15.0-154-generic (buildd@lcy01-amd64-011) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #161-Ubuntu..."
       },
