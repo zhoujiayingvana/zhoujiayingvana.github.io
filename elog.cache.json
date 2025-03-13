@@ -381,43 +381,6 @@
       "docPath": "docs/docs/Linux"
     },
     {
-      "id": 185354905,
-      "doc_id": "vg8d7ng5b9air7kt",
-      "updated": 1725537113000,
-      "properties": {
-        "title": "文档",
-        "urlname": "vg8d7ng5b9air7kt",
-        "date": "2024-09-05 19:51:29",
-        "updated": "2024-09-05 19:51:53"
-      },
-      "catalog": [],
-      "realName": "文档",
-      "relativePath": "/文档.md",
-      "docPath": "docs/docs"
-    },
-    {
-      "id": 185354843,
-      "doc_id": "kvyqr4gui8ni9z8p",
-      "updated": 1725537048000,
-      "properties": {
-        "title": "转正答辩",
-        "urlname": "kvyqr4gui8ni9z8p",
-        "date": "2024-09-05 19:50:48",
-        "updated": "2024-09-05 19:50:48",
-        "cover": "https://intranetproxy.alipay.com/skylark/lark/0/2023/jpeg/323993/1693535457774-96719755-3f1f-4d00-858a-317dea479dbb.jpeg",
-        "description": "部门姓名花名入职时间JOBCODE主管姓名师兄姓名淘天集团-中小企业发展中心-1688事业部-商业化中心-商业化技术-外投广告&体验周嘉莹镜瞳2023.6.19273230陈颖豪(颓山)智前烨(巢夷)一、个人履历 本科东南大学  计算机学院  软件工程专业排名：10/108实践：参与2次校企合..."
-      },
-      "catalog": [
-        {
-          "title": "文档",
-          "doc_id": "kvyqr4gui8ni9z8p"
-        }
-      ],
-      "realName": "转正答辩",
-      "relativePath": "/文档/转正答辩.md",
-      "docPath": "docs/docs/文档"
-    },
-    {
       "id": 186851901,
       "doc_id": "zu7ul3qe47dnmifp",
       "updated": 1733669178000,
@@ -590,27 +553,6 @@
       "docPath": "docs/docs/大数据学习"
     },
     {
-      "id": 189753836,
-      "doc_id": "dewvcdc3ckdsmtr3",
-      "updated": 1728615386000,
-      "properties": {
-        "title": "联洲工作计划",
-        "urlname": "dewvcdc3ckdsmtr3",
-        "date": "2024-10-11 10:14:05",
-        "updated": "2024-10-11 10:56:26",
-        "description": "2024-M10第一周（10.8-10.11） 本周安排准备答辩ppt 完善其他OLAP引擎调研、Airflow和dolphinscheduler的对比 完成数据测试和性能测试 优化代码逻辑 画图现在的月报计算流程 下周计划 完善答辩ppt 与导师进行预答辩演讲 进行成本估算"
-      },
-      "catalog": [
-        {
-          "title": "文档",
-          "doc_id": "dewvcdc3ckdsmtr3"
-        }
-      ],
-      "realName": "联洲工作计划",
-      "relativePath": "/文档/联洲工作计划.md",
-      "docPath": "docs/docs/文档"
-    },
-    {
       "id": 198799752,
       "doc_id": "uwsmv6a4l1aex84q",
       "updated": 1735113976000,
@@ -712,6 +654,28 @@
       "realName": "Airflow",
       "relativePath": "/Airflow.md",
       "docPath": "docs/docs"
+    },
+    {
+      "id": 210141887,
+      "doc_id": "gkseygskvyxn6cih",
+      "updated": 1741836891000,
+      "properties": {
+        "title": "OLAP引擎调研",
+        "urlname": "gkseygskvyxn6cih",
+        "date": "2025-03-12 20:58:00",
+        "updated": "2025-03-13 11:34:51",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1741784771424-a482a1cd-6a96-4abb-9bf5-852327d4ccce.png",
+        "description": "参考主流十大开源OLAP技术架构对比_olap引擎-CSDN博客常见的 OLAP 引擎介绍-CSDN博客https://zhuanlan.zhihu.com/p/55197560对比StarrocksDorisclickhousedruidkylinimpalaprestoGreenPlum定..."
+      },
+      "catalog": [
+        {
+          "title": "数据平台搭建",
+          "doc_id": "gkseygskvyxn6cih"
+        }
+      ],
+      "realName": "OLAP引擎调研",
+      "relativePath": "/数据平台搭建/OLAP引擎调研.md",
+      "docPath": "docs/docs/数据平台搭建"
     }
   ],
   "catalog": [
@@ -722,20 +686,35 @@
       "url": "xhi1xrkb27yll12f",
       "prev_uuid": "",
       "sibling_uuid": "POMimS74KvjXO0Hm",
-      "child_uuid": "f3fvA8dC7WHja-gD",
+      "child_uuid": "fLBlMgUOSSvcKAGy",
       "parent_uuid": "",
       "doc_id": 197028599,
       "level": 0,
       "id": 197028599,
       "open_window": 1,
-      "visible": 0
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "OLAP引擎调研",
+      "uuid": "fLBlMgUOSSvcKAGy",
+      "url": "gkseygskvyxn6cih",
+      "prev_uuid": "j_88hTvhdLCJKHxq",
+      "sibling_uuid": "f3fvA8dC7WHja-gD",
+      "child_uuid": "",
+      "parent_uuid": "j_88hTvhdLCJKHxq",
+      "doc_id": 210141887,
+      "level": 1,
+      "id": 210141887,
+      "open_window": 1,
+      "visible": 1
     },
     {
       "type": "DOC",
       "title": "数据建模",
       "uuid": "f3fvA8dC7WHja-gD",
       "url": "bpsgxm5rz7ghnktn",
-      "prev_uuid": "j_88hTvhdLCJKHxq",
+      "prev_uuid": "fLBlMgUOSSvcKAGy",
       "sibling_uuid": "",
       "child_uuid": "",
       "parent_uuid": "j_88hTvhdLCJKHxq",
@@ -1036,7 +1015,7 @@
       "uuid": "EX9yYti9IEO_uPYq",
       "url": "gdb11fv2bgqd8ix6",
       "prev_uuid": "IrpnG32GwUNyMBO4",
-      "sibling_uuid": "ZcXgSKIwK9vYkv0m",
+      "sibling_uuid": "",
       "child_uuid": "ZdMUPuCoA9svofw4",
       "parent_uuid": "",
       "doc_id": 185353116,
@@ -1192,51 +1171,6 @@
       "doc_id": 125475082,
       "level": 1,
       "id": 125475082,
-      "open_window": 1,
-      "visible": 1
-    },
-    {
-      "type": "DOC",
-      "title": "文档",
-      "uuid": "ZcXgSKIwK9vYkv0m",
-      "url": "vg8d7ng5b9air7kt",
-      "prev_uuid": "EX9yYti9IEO_uPYq",
-      "sibling_uuid": "",
-      "child_uuid": "xo1G-Ytjf8pUhsjT",
-      "parent_uuid": "",
-      "doc_id": 185354905,
-      "level": 0,
-      "id": 185354905,
-      "open_window": 1,
-      "visible": 1
-    },
-    {
-      "type": "DOC",
-      "title": "联洲工作计划",
-      "uuid": "xo1G-Ytjf8pUhsjT",
-      "url": "dewvcdc3ckdsmtr3",
-      "prev_uuid": "ZcXgSKIwK9vYkv0m",
-      "sibling_uuid": "rpXrloxo6dt35AYl",
-      "child_uuid": "",
-      "parent_uuid": "ZcXgSKIwK9vYkv0m",
-      "doc_id": 189753836,
-      "level": 1,
-      "id": 189753836,
-      "open_window": 1,
-      "visible": 1
-    },
-    {
-      "type": "DOC",
-      "title": "转正答辩",
-      "uuid": "rpXrloxo6dt35AYl",
-      "url": "kvyqr4gui8ni9z8p",
-      "prev_uuid": "xo1G-Ytjf8pUhsjT",
-      "sibling_uuid": "",
-      "child_uuid": "",
-      "parent_uuid": "ZcXgSKIwK9vYkv0m",
-      "doc_id": 185354843,
-      "level": 1,
-      "id": 185354843,
       "open_window": 1,
       "visible": 1
     }
