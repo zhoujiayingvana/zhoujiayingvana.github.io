@@ -658,12 +658,12 @@
     {
       "id": 210141887,
       "doc_id": "gkseygskvyxn6cih",
-      "updated": 1741836891000,
+      "updated": 1742008144000,
       "properties": {
         "title": "OLAP引擎调研",
         "urlname": "gkseygskvyxn6cih",
         "date": "2025-03-12 20:58:00",
-        "updated": "2025-03-13 11:34:51",
+        "updated": "2025-03-15 11:09:04",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1741784771424-a482a1cd-6a96-4abb-9bf5-852327d4ccce.png",
         "description": "参考主流十大开源OLAP技术架构对比_olap引擎-CSDN博客常见的 OLAP 引擎介绍-CSDN博客https://zhuanlan.zhihu.com/p/55197560对比StarrocksDorisclickhousedruidkylinimpalaprestoGreenPlum定..."
       },
@@ -676,15 +676,71 @@
       "realName": "OLAP引擎调研",
       "relativePath": "/数据平台搭建/OLAP引擎调研.md",
       "docPath": "docs/docs/数据平台搭建"
+    },
+    {
+      "id": 213563025,
+      "doc_id": "nz5x58pu52zerh6z",
+      "updated": 1744170233000,
+      "properties": {
+        "title": "部署",
+        "urlname": "nz5x58pu52zerh6z",
+        "date": "2025-04-02 14:25:26",
+        "updated": "2025-04-09 11:43:53",
+        "description": "AWS配置能够互相连通：同一个VPC有公网IP或域名，别的机器能访问，开启8030端口和9030端口三台机器开启fe、be全部端口互相访问机器环境访问外网配置网络以启用互联网访问。您将在 Amazon 云中自己的虚拟私有云（VPC）子网中启动实例。子网是您 VPC 中的一个 IP 地址范围。您..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "nz5x58pu52zerh6z"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "nz5x58pu52zerh6z"
+        }
+      ],
+      "realName": "部署",
+      "relativePath": "/大数据学习/StarRocks/部署.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 210254117,
+      "doc_id": "qdaxv43tprgagbsf",
+      "updated": 1741934397000,
+      "properties": {
+        "title": "部署",
+        "urlname": "qdaxv43tprgagbsf",
+        "date": "2025-03-13 13:55:28",
+        "updated": "2025-03-14 14:39:57",
+        "description": "资源大小uat环境3FE、3CN混合部署。单机配置 8C+32G操作系统centos 7配置项调优修改缓存使用的磁盘占比：默认为所有磁盘空间的80%，且不会自动解除占用，由于节点还会有其他应用，使用默认值容易磁盘爆炸"
+      },
+      "catalog": [],
+      "realName": "部署",
+      "relativePath": "/部署.md",
+      "docPath": "docs/docs"
     }
   ],
   "catalog": [
     {
       "type": "DOC",
+      "title": "部署",
+      "uuid": "SSp_bTiAgUvL0cww",
+      "url": "qdaxv43tprgagbsf",
+      "prev_uuid": "",
+      "sibling_uuid": "j_88hTvhdLCJKHxq",
+      "child_uuid": "",
+      "parent_uuid": "",
+      "doc_id": 210254117,
+      "level": 0,
+      "id": 210254117,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "数据平台搭建",
       "uuid": "j_88hTvhdLCJKHxq",
       "url": "xhi1xrkb27yll12f",
-      "prev_uuid": "",
+      "prev_uuid": "SSp_bTiAgUvL0cww",
       "sibling_uuid": "POMimS74KvjXO0Hm",
       "child_uuid": "fLBlMgUOSSvcKAGy",
       "parent_uuid": "",
@@ -1001,11 +1057,26 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "gl8H6re-at_6_8Ux",
       "sibling_uuid": "",
-      "child_uuid": "",
+      "child_uuid": "KmZq7iP8PQoGFB16",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
       "id": 183924267,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "部署",
+      "uuid": "KmZq7iP8PQoGFB16",
+      "url": "nz5x58pu52zerh6z",
+      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 213563025,
+      "level": 2,
+      "id": 213563025,
       "open_window": 1,
       "visible": 1
     },
