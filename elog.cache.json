@@ -680,12 +680,12 @@
     {
       "id": 213563025,
       "doc_id": "nz5x58pu52zerh6z",
-      "updated": 1744170233000,
+      "updated": 1744193861000,
       "properties": {
         "title": "部署",
         "urlname": "nz5x58pu52zerh6z",
         "date": "2025-04-02 14:25:26",
-        "updated": "2025-04-09 11:43:53",
+        "updated": "2025-04-09 18:17:41",
         "description": "AWS配置能够互相连通：同一个VPC有公网IP或域名，别的机器能访问，开启8030端口和9030端口三台机器开启fe、be全部端口互相访问机器环境访问外网配置网络以启用互联网访问。您将在 Amazon 云中自己的虚拟私有云（VPC）子网中启动实例。子网是您 VPC 中的一个 IP 地址范围。您..."
       },
       "catalog": [
@@ -717,6 +717,56 @@
       "realName": "部署",
       "relativePath": "/部署.md",
       "docPath": "docs/docs"
+    },
+    {
+      "id": 216255206,
+      "doc_id": "brcwz49v2zyfhh6u",
+      "updated": 1745682422000,
+      "properties": {
+        "title": "权限",
+        "urlname": "brcwz49v2zyfhh6u",
+        "date": "2025-04-20 21:41:04",
+        "updated": "2025-04-26 23:47:02",
+        "description": "所有用户，默认只赋予select非线上ads数据表的权限：需要一个排除模式olap用户：查询权限，create table权限，insert自己create的表的权限flink用户：查询、insert、drop，包含表和物化视图"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "brcwz49v2zyfhh6u"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "brcwz49v2zyfhh6u"
+        }
+      ],
+      "realName": "权限",
+      "relativePath": "/大数据学习/StarRocks/权限.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 218382782,
+      "doc_id": "zv2pd29s3zsotxu0",
+      "updated": 1746756039000,
+      "properties": {
+        "title": "性能测试",
+        "urlname": "zv2pd29s3zsotxu0",
+        "date": "2025-05-06 16:44:40",
+        "updated": "2025-05-09 10:00:39",
+        "description": "一、基础功能测试核心功能验证数据导入与导出：测试通过Stream Load、Broker Load、Flink CDC等方式导入数据的能力，验证数据一致性和完整性，尤其是主键模型的更新和删除操作110。多数据源支持：验证与Hive、Iceberg、MySQL等外部数据源的联邦查询能力，确保跨数..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "zv2pd29s3zsotxu0"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "zv2pd29s3zsotxu0"
+        }
+      ],
+      "realName": "性能测试",
+      "relativePath": "/大数据学习/StarRocks/性能测试.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
     }
   ],
   "catalog": [
@@ -1057,7 +1107,7 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "gl8H6re-at_6_8Ux",
       "sibling_uuid": "",
-      "child_uuid": "KmZq7iP8PQoGFB16",
+      "child_uuid": "w2CNvwO7vBMAaNkD",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
@@ -1067,10 +1117,40 @@
     },
     {
       "type": "DOC",
+      "title": "性能测试",
+      "uuid": "w2CNvwO7vBMAaNkD",
+      "url": "zv2pd29s3zsotxu0",
+      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "sibling_uuid": "iaevxSVMP1SCvZdk",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 218382782,
+      "level": 2,
+      "id": 218382782,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "权限",
+      "uuid": "iaevxSVMP1SCvZdk",
+      "url": "brcwz49v2zyfhh6u",
+      "prev_uuid": "w2CNvwO7vBMAaNkD",
+      "sibling_uuid": "KmZq7iP8PQoGFB16",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 216255206,
+      "level": 2,
+      "id": 216255206,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "部署",
       "uuid": "KmZq7iP8PQoGFB16",
       "url": "nz5x58pu52zerh6z",
-      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "prev_uuid": "iaevxSVMP1SCvZdk",
       "sibling_uuid": "",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
