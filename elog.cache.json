@@ -680,12 +680,12 @@
     {
       "id": 213563025,
       "doc_id": "nz5x58pu52zerh6z",
-      "updated": 1744193861000,
+      "updated": 1747389785000,
       "properties": {
         "title": "部署",
         "urlname": "nz5x58pu52zerh6z",
         "date": "2025-04-02 14:25:26",
-        "updated": "2025-04-09 18:17:41",
+        "updated": "2025-05-16 18:03:05",
         "description": "AWS配置能够互相连通：同一个VPC有公网IP或域名，别的机器能访问，开启8030端口和9030端口三台机器开启fe、be全部端口互相访问机器环境访问外网配置网络以启用互联网访问。您将在 Amazon 云中自己的虚拟私有云（VPC）子网中启动实例。子网是您 VPC 中的一个 IP 地址范围。您..."
       },
       "catalog": [
@@ -746,12 +746,12 @@
     {
       "id": 218382782,
       "doc_id": "zv2pd29s3zsotxu0",
-      "updated": 1746756039000,
+      "updated": 1746775150000,
       "properties": {
         "title": "性能测试",
         "urlname": "zv2pd29s3zsotxu0",
         "date": "2025-05-06 16:44:40",
-        "updated": "2025-05-09 10:00:39",
+        "updated": "2025-05-09 15:19:10",
         "description": "一、基础功能测试核心功能验证数据导入与导出：测试通过Stream Load、Broker Load、Flink CDC等方式导入数据的能力，验证数据一致性和完整性，尤其是主键模型的更新和删除操作110。多数据源支持：验证与Hive、Iceberg、MySQL等外部数据源的联邦查询能力，确保跨数..."
       },
       "catalog": [
@@ -766,6 +766,32 @@
       ],
       "realName": "性能测试",
       "relativePath": "/大数据学习/StarRocks/性能测试.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 225059193,
+      "doc_id": "riahu3r39etwuf2q",
+      "updated": 1751031255000,
+      "properties": {
+        "title": "部署-详细教程",
+        "urlname": "riahu3r39etwuf2q",
+        "date": "2025-06-23 20:34:15",
+        "updated": "2025-06-27 21:34:15",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
+        "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "riahu3r39etwuf2q"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "riahu3r39etwuf2q"
+        }
+      ],
+      "realName": "部署-详细教程",
+      "relativePath": "/大数据学习/StarRocks/部署-详细教程.md",
       "docPath": "docs/docs/大数据学习/StarRocks"
     }
   ],
@@ -1136,7 +1162,7 @@
       "uuid": "iaevxSVMP1SCvZdk",
       "url": "brcwz49v2zyfhh6u",
       "prev_uuid": "w2CNvwO7vBMAaNkD",
-      "sibling_uuid": "KmZq7iP8PQoGFB16",
+      "sibling_uuid": "v0TX2JitnnChtSO3",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
       "doc_id": 216255206,
@@ -1147,10 +1173,25 @@
     },
     {
       "type": "DOC",
+      "title": "部署-详细教程",
+      "uuid": "v0TX2JitnnChtSO3",
+      "url": "riahu3r39etwuf2q",
+      "prev_uuid": "iaevxSVMP1SCvZdk",
+      "sibling_uuid": "KmZq7iP8PQoGFB16",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 225059193,
+      "level": 2,
+      "id": 225059193,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "部署",
       "uuid": "KmZq7iP8PQoGFB16",
       "url": "nz5x58pu52zerh6z",
-      "prev_uuid": "iaevxSVMP1SCvZdk",
+      "prev_uuid": "v0TX2JitnnChtSO3",
       "sibling_uuid": "",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
