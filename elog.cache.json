@@ -771,12 +771,12 @@
     {
       "id": 225059193,
       "doc_id": "riahu3r39etwuf2q",
-      "updated": 1751031255000,
+      "updated": 1751248228000,
       "properties": {
         "title": "部署-详细教程",
         "urlname": "riahu3r39etwuf2q",
         "date": "2025-06-23 20:34:15",
-        "updated": "2025-06-27 21:34:15",
+        "updated": "2025-06-30 09:50:28",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
         "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
       },
