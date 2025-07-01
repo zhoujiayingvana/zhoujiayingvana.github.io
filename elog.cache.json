@@ -797,12 +797,12 @@
     {
       "id": 225944169,
       "doc_id": "vcsqd1h7f3gn0deo",
-      "updated": 1751359732000,
+      "updated": 1751364646000,
       "properties": {
         "title": "StarRocks介绍",
         "urlname": "vcsqd1h7f3gn0deo",
         "date": "2025-06-30 14:09:49",
-        "updated": "2025-07-01 16:48:52",
+        "updated": "2025-07-01 18:10:46",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751278145285-2fffdd2e-34e9-4ca0-95ac-d4722c9aa47a.png",
         "description": "背景介绍Cassandra的qoe存储成本过高业务的定时任务随着网络数增加处理时长过长，定时任务中的count等聚合操作存在瓶颈qoe成本优化专项，使用大数据流处理框架+MPP数据库改造qoe链路，降低Cassandra存储成本，提高数据处理速度StarRocks概述参考文档：https://..."
       },

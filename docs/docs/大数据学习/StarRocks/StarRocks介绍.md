@@ -326,17 +326,55 @@ StarRock不支持的语法
 1. 选择合适的分区和分桶策略
     1. 单分区大小<100GB
     2. 单分桶大小1~10G，推荐<1GB
-2. 前缀索引遇到varchar、string类型类型会自动截断，创建前缀索引需要注意。
+2. 前缀索引遇到varchar、string类型会自动截断。前缀索引遇到范围查询也会截断。
     1. 如果经常查询的字段中，有string类型，不能放在最后
         1. 选择非string类型创建索引，然后为string类型创建别的索引，例如bitmap索引，bloom filter索引
-        2. 选择string类型创建索引，考虑分区分桶剪裁是否覆盖查询场景
+        2. 选择string类型创建索引，考虑分区分桶剪裁是否覆盖查询语句
 
 ## 查询优化
+假设建表语句为：
+
+```sql
+CREATE TABLE tauc.ap_wifi_quality
+(
+    network_id                       bigint,
+    mac                              string,
+    collect_time                     datetime,
+    active                           int,
+    alert_count                      int,
+  ...
+)
+PRIMARY KEY (network_id, mac, collect_time) -- 声明主键
+partition by date_trunc('day', collect_time) -- 声明分区键
+distributed by hash(network_id) -- 声明哈希分桶键
+order by (network_id,mac,collect_time) -- 声明排序键（前缀索引）
+```
+
 ### 分区剪裁
 在查询的sql中添加分区字段的条件，会触发分区剪裁，加速查询
 
+示例：按天分区，只查询某一天数据
+
+```sql
+explian select network_id from tauc.ap_wifi_quality_full where collect_time <'2025-06-26' and collect_time>'2025-06-25' limit 10;
+```
+
+![](../../../images/c497afb5d20e0be57acba60c2d01e79b.png)
+
+explain执行计划中只查询1个分区的数据
+
 ### 分桶剪裁
-在查询的sql中，添加**所有分桶键**，才会触发分桶剪裁。分桶剪裁对查询速度提升较大
+在查询的sql中，添加**所有分桶键**，才会触发分桶剪裁。分桶剪裁也会加速查询
+
+示例：每个分区下6个分桶，按network_id分区，查询某个network_id下的7天数据
+
+```sql
+select network_id from tauc.ap_wifi_quality_full where network_id = 1 limit 10;
+```
+
+![](../../../images/c16304782587ddf740bc7663aa9d9361.png)
+
+explain执行计划中只查询了1/6的桶
 
 ### 查询列数量的影响
 由于starrocks是列式存储，查询的列数量几乎与查询qps成正比，因此对于列数很多的表，不建议select *查询所有字段。
@@ -362,20 +400,41 @@ distributed by hash(network_id) -- 声明哈希分桶键
 order by (network_id,mac,collect_time) -- 声明排序键（前缀索引）
 ```
 
-1.查过去7天数据：指定network_id，mac，collect_time范围（分桶剪裁，前缀索引mac）
+场景一：查过去7天数据：指定network_id，mac，collect_time范围（分桶剪裁，前缀索引mac）
 
-2.按时间查最新一次数据：指定network_id，mac，collect_time倒序，limit1（分桶剪裁，前缀索引mac）
+场景二：按时间查最新一次数据：指定network_id，mac，collect_time倒序，limit1（分桶剪裁，前缀索引mac）
 
 > 建表语句中collect_time无法作为索引，但starrocks对limit1做了优化，仅扫描每个桶的top1，查询速度不会很慢
 >
 
-3.只用network_id和collect_time查过去x天数据：指定network_id，collect_time范围（分桶剪裁，分区剪裁）
+场景三：只用network_id和collect_time查过去x天数据：指定network_id，collect_time范围（分桶剪裁，分区剪裁）
 
 > 需要将原有cassandra查询中，先查一个network所有mac，再根据mac多次查询合并为只查一次network_id下所有数据
 >
 
 # 如何从Cassandra迁移到StarRocks
-类型映射：starrocks、Cassandra、mysql、java中的类型映射
+## 微服务中配置
+StarRocks兼容MySQL协议，与MySQL配置基本一致
+
+## 类型映射
+| **字段含义** | **StarRocks 类型** | **MySQL 类型** | **Cassandra 类型** | **Java 类型（JDBC/ORM）** | **备注说明** |
+| --- | --- | --- | --- | --- | --- |
+| 主键 ID | `BIGINT` | `BIGINT` | `BIGINT` | `Long` | 三者兼容，Java 使用 Long |
+| 整数 | `INT` | `INT` | `INT` | `Integer` | 完全兼容 |
+| 小整数 | `TINYINT`<br/> / `SMALLINT` | `TINYINT`<br/> / `SMALLINT` | `TINYINT`<br/> / `SMALLINT` | `Byte`<br/> / `Short` | 类型长度相近 |
+| 浮点数 | `FLOAT` | `FLOAT` | `FLOAT` | `Float` | |
+| 双精度数 | `DOUBLE` | `DOUBLE` | `DOUBLE` | `Double` |  |
+| 高精度金额/计量 | `DECIMAL(p, s)` | `DECIMAL(p, s)` | `DECIMAL` | `BigDecimal` |  |
+| 字符串 | `VARCHAR(n)`/`STRING` | `VARCHAR(n)`<br/> / `TEXT` | `TEXT` | `String` | StarRocks的STRING实际是varchar(65535)，相同长度的字符串，varchar和string在存储大小，查询性能上没有区别 |
+| 长文本 | `TEXT` | `TEXT` | `TEXT` | `String` | 不建议用于主键表，适合宽表分析场景 |
+| 布尔值 | `BOOLEAN`<br/>（即 `TINYINT(1)`<br/>) | `BOOLEAN`<br/> / `TINYINT(1)` | `BOOLEAN` | `Boolean`<br/> / `boolean` | StarRocks 实际上底层为 `TINYINT`，0 代表 false，1 代表 true |
+| 日期 | `DATE` | `DATE` | `DATE` | `java.sql.Date` | 均支持 `yyyy-MM-dd`<br/> 格式 |
+| 时间戳 | `DATETIME` | `DATETIME`<br/> / `TIMESTAMP` | `TIMESTAMP` | `LocalDateTime`<br/> / `Timestamp` | StarRocks `DATETIME`<br/> 是毫秒精度，与 Cassandra `TIMESTAMP`<br/> 对应 |
+| UUID / 唯一ID | `CHAR(36)` | `CHAR(36)`<br/> / `VARCHAR(36)` | `UUID` | `String`<br/> / `UUID` | StarRocks 没有 UUID 类型，使用 `CHAR(36)`<br/> 存储 |
+| 数组（分析场景） | `ARRAY<type>` | ❌（无原生支持） | `LIST<type>` | `List<T>` |  |
+| 位图（分析场景） | `BITMAP` | ❌ | ❌ | `String`<br/> / 自定义对象 | 用于高性能去重分析 |
+| HLL（分析场景） | `HLL` | ❌ | ❌ | `String`<br/> / 自定义对象 | 用于近似去重 |
+
 
 
 
