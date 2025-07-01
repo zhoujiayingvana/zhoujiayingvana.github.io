@@ -771,12 +771,12 @@
     {
       "id": 225059193,
       "doc_id": "riahu3r39etwuf2q",
-      "updated": 1751248228000,
+      "updated": 1751249587000,
       "properties": {
         "title": "部署-详细教程",
         "urlname": "riahu3r39etwuf2q",
         "date": "2025-06-23 20:34:15",
-        "updated": "2025-06-30 09:50:28",
+        "updated": "2025-06-30 10:13:07",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
         "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
       },
@@ -792,6 +792,32 @@
       ],
       "realName": "部署-详细教程",
       "relativePath": "/大数据学习/StarRocks/部署-详细教程.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 225944169,
+      "doc_id": "vcsqd1h7f3gn0deo",
+      "updated": 1751359732000,
+      "properties": {
+        "title": "StarRocks介绍",
+        "urlname": "vcsqd1h7f3gn0deo",
+        "date": "2025-06-30 14:09:49",
+        "updated": "2025-07-01 16:48:52",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751278145285-2fffdd2e-34e9-4ca0-95ac-d4722c9aa47a.png",
+        "description": "背景介绍Cassandra的qoe存储成本过高业务的定时任务随着网络数增加处理时长过长，定时任务中的count等聚合操作存在瓶颈qoe成本优化专项，使用大数据流处理框架+MPP数据库改造qoe链路，降低Cassandra存储成本，提高数据处理速度StarRocks概述参考文档：https://..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "vcsqd1h7f3gn0deo"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "vcsqd1h7f3gn0deo"
+        }
+      ],
+      "realName": "StarRocks介绍",
+      "relativePath": "/大数据学习/StarRocks/StarRocks介绍.md",
       "docPath": "docs/docs/大数据学习/StarRocks"
     }
   ],
@@ -1133,7 +1159,7 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "gl8H6re-at_6_8Ux",
       "sibling_uuid": "",
-      "child_uuid": "w2CNvwO7vBMAaNkD",
+      "child_uuid": "7H4kTGfAxWQk8PoC",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
@@ -1143,10 +1169,25 @@
     },
     {
       "type": "DOC",
+      "title": "StarRocks介绍",
+      "uuid": "7H4kTGfAxWQk8PoC",
+      "url": "vcsqd1h7f3gn0deo",
+      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "sibling_uuid": "w2CNvwO7vBMAaNkD",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 225944169,
+      "level": 2,
+      "id": 225944169,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "性能测试",
       "uuid": "w2CNvwO7vBMAaNkD",
       "url": "zv2pd29s3zsotxu0",
-      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "prev_uuid": "7H4kTGfAxWQk8PoC",
       "sibling_uuid": "iaevxSVMP1SCvZdk",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
