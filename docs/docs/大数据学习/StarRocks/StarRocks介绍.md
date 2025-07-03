@@ -407,7 +407,7 @@ order by (network_id,mac,collect_time) -- 声明排序键（前缀索引）
 > 建表语句中collect_time无法作为索引，但starrocks对limit1做了优化，仅扫描每个桶的top1，查询速度不会很慢
 >
 
-场景三：只用network_id和collect_time查过去x天数据：指定network_id，collect_time范围（分桶剪裁，分区剪裁）
+场景三：只用network_id和collect_time查过去x天数据：指定network_id，collect_time范围（分桶剪裁，分区剪裁，前缀索引network_id）
 
 > 需要将原有cassandra查询中，先查一个network所有mac，再根据mac多次查询合并为只查一次network_id下所有数据
 >
@@ -426,7 +426,6 @@ StarRocks兼容MySQL协议，与MySQL配置基本一致
 | 双精度数 | `DOUBLE` | `DOUBLE` | `DOUBLE` | `Double` |  |
 | 高精度金额/计量 | `DECIMAL(p, s)` | `DECIMAL(p, s)` | `DECIMAL` | `BigDecimal` |  |
 | 字符串 | `VARCHAR(n)`/`STRING` | `VARCHAR(n)`<br/> / `TEXT` | `TEXT` | `String` | StarRocks的STRING实际是varchar(65535)，相同长度的字符串，varchar和string在存储大小，查询性能上没有区别 |
-| 长文本 | `TEXT` | `TEXT` | `TEXT` | `String` | 不建议用于主键表，适合宽表分析场景 |
 | 布尔值 | `BOOLEAN`<br/>（即 `TINYINT(1)`<br/>) | `BOOLEAN`<br/> / `TINYINT(1)` | `BOOLEAN` | `Boolean`<br/> / `boolean` | StarRocks 实际上底层为 `TINYINT`，0 代表 false，1 代表 true |
 | 日期 | `DATE` | `DATE` | `DATE` | `java.sql.Date` | 均支持 `yyyy-MM-dd`<br/> 格式 |
 | 时间戳 | `DATETIME` | `DATETIME`<br/> / `TIMESTAMP` | `TIMESTAMP` | `LocalDateTime`<br/> / `Timestamp` | StarRocks `DATETIME`<br/> 是毫秒精度，与 Cassandra `TIMESTAMP`<br/> 对应 |

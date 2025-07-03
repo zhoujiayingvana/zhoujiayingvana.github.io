@@ -797,12 +797,12 @@
     {
       "id": 225944169,
       "doc_id": "vcsqd1h7f3gn0deo",
-      "updated": 1751364646000,
+      "updated": 1751365284000,
       "properties": {
         "title": "StarRocks介绍",
         "urlname": "vcsqd1h7f3gn0deo",
         "date": "2025-06-30 14:09:49",
-        "updated": "2025-07-01 18:10:46",
+        "updated": "2025-07-01 18:21:24",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751278145285-2fffdd2e-34e9-4ca0-95ac-d4722c9aa47a.png",
         "description": "背景介绍Cassandra的qoe存储成本过高业务的定时任务随着网络数增加处理时长过长，定时任务中的count等聚合操作存在瓶颈qoe成本优化专项，使用大数据流处理框架+MPP数据库改造qoe链路，降低Cassandra存储成本，提高数据处理速度StarRocks概述参考文档：https://..."
       },
@@ -818,6 +818,31 @@
       ],
       "realName": "StarRocks介绍",
       "relativePath": "/大数据学习/StarRocks/StarRocks介绍.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 226269800,
+      "doc_id": "iidwge6fb86gdo3q",
+      "updated": 1751525384000,
+      "properties": {
+        "title": "告警项配置",
+        "urlname": "iidwge6fb86gdo3q",
+        "date": "2025-07-02 10:40:39",
+        "updated": "2025-07-03 14:49:44",
+        "description": "按数据库的指标来配置额外增加fe节点的告警告警指标等级公式阈值备注节点状态监控fe alive状态P1up{group=“fe”}"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "iidwge6fb86gdo3q"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "iidwge6fb86gdo3q"
+        }
+      ],
+      "realName": "告警项配置",
+      "relativePath": "/大数据学习/StarRocks/告警项配置.md",
       "docPath": "docs/docs/大数据学习/StarRocks"
     }
   ],
@@ -1159,7 +1184,7 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "gl8H6re-at_6_8Ux",
       "sibling_uuid": "",
-      "child_uuid": "7H4kTGfAxWQk8PoC",
+      "child_uuid": "ZvTXojkF4QMmX7yr",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
@@ -1169,10 +1194,25 @@
     },
     {
       "type": "DOC",
+      "title": "告警项配置",
+      "uuid": "ZvTXojkF4QMmX7yr",
+      "url": "iidwge6fb86gdo3q",
+      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "sibling_uuid": "7H4kTGfAxWQk8PoC",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 226269800,
+      "level": 2,
+      "id": 226269800,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "StarRocks介绍",
       "uuid": "7H4kTGfAxWQk8PoC",
       "url": "vcsqd1h7f3gn0deo",
-      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "prev_uuid": "ZvTXojkF4QMmX7yr",
       "sibling_uuid": "w2CNvwO7vBMAaNkD",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
