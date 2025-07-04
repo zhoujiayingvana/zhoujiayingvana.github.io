@@ -844,6 +844,31 @@
       "realName": "告警项配置",
       "relativePath": "/大数据学习/StarRocks/告警项配置.md",
       "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 226501247,
+      "doc_id": "bfraggqxa1gf5ae4",
+      "updated": 1751600515000,
+      "properties": {
+        "title": "应急预案",
+        "urlname": "bfraggqxa1gf5ae4",
+        "date": "2025-07-03 20:14:26",
+        "updated": "2025-07-04 11:41:55",
+        "description": "突发情况类型突发情况详情应急方案执行负责人节点宕机fe节点宕机（1）优先重启节点（2）查看监控内存、cpu、是否异常（3）查看日志是否有oom、full gc，选举失败等字样，定位问题（4）优化jvm，调大jvm内存，调小be节点的mem_limit参数be节点宕机（1）优先重启节点（2）查看..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "bfraggqxa1gf5ae4"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "bfraggqxa1gf5ae4"
+        }
+      ],
+      "realName": "应急预案",
+      "relativePath": "/大数据学习/StarRocks/应急预案.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
     }
   ],
   "catalog": [
@@ -1184,7 +1209,7 @@
       "url": "kk6w5rn88m2x4zgc",
       "prev_uuid": "gl8H6re-at_6_8Ux",
       "sibling_uuid": "",
-      "child_uuid": "ZvTXojkF4QMmX7yr",
+      "child_uuid": "LFxWQqbt1F-Quu_d",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 183924267,
       "level": 1,
@@ -1194,10 +1219,25 @@
     },
     {
       "type": "DOC",
+      "title": "应急预案",
+      "uuid": "LFxWQqbt1F-Quu_d",
+      "url": "bfraggqxa1gf5ae4",
+      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "sibling_uuid": "ZvTXojkF4QMmX7yr",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 226501247,
+      "level": 2,
+      "id": 226501247,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "告警项配置",
       "uuid": "ZvTXojkF4QMmX7yr",
       "url": "iidwge6fb86gdo3q",
-      "prev_uuid": "vybl0kqoMPyu9vl1",
+      "prev_uuid": "LFxWQqbt1F-Quu_d",
       "sibling_uuid": "7H4kTGfAxWQk8PoC",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
