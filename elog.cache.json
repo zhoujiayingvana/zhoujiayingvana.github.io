@@ -771,12 +771,12 @@
     {
       "id": 225059193,
       "doc_id": "riahu3r39etwuf2q",
-      "updated": 1751249587000,
+      "updated": 1752458945000,
       "properties": {
         "title": "部署-详细教程",
         "urlname": "riahu3r39etwuf2q",
         "date": "2025-06-23 20:34:15",
-        "updated": "2025-06-30 10:13:07",
+        "updated": "2025-07-14 10:09:05",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
         "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
       },
@@ -848,12 +848,12 @@
     {
       "id": 226501247,
       "doc_id": "bfraggqxa1gf5ae4",
-      "updated": 1751600515000,
+      "updated": 1752117526000,
       "properties": {
         "title": "应急预案",
         "urlname": "bfraggqxa1gf5ae4",
         "date": "2025-07-03 20:14:26",
-        "updated": "2025-07-04 11:41:55",
+        "updated": "2025-07-10 11:18:46",
         "description": "突发情况类型突发情况详情应急方案执行负责人节点宕机fe节点宕机（1）优先重启节点（2）查看监控内存、cpu、是否异常（3）查看日志是否有oom、full gc，选举失败等字样，定位问题（4）优化jvm，调大jvm内存，调小be节点的mem_limit参数be节点宕机（1）优先重启节点（2）查看..."
       },
       "catalog": [
@@ -869,6 +869,54 @@
       "realName": "应急预案",
       "relativePath": "/大数据学习/StarRocks/应急预案.md",
       "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 228085301,
+      "doc_id": "ysrax08t8y15n3kp",
+      "updated": 1752667135000,
+      "properties": {
+        "title": "部署-详细教程-Ubuntu",
+        "urlname": "ysrax08t8y15n3kp",
+        "date": "2025-07-15 13:38:17",
+        "updated": "2025-07-16 19:58:55",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
+        "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "ysrax08t8y15n3kp"
+        },
+        {
+          "title": "StarRocks",
+          "doc_id": "ysrax08t8y15n3kp"
+        }
+      ],
+      "realName": "部署-详细教程-Ubuntu",
+      "relativePath": "/大数据学习/StarRocks/部署-详细教程-Ubuntu.md",
+      "docPath": "docs/docs/大数据学习/StarRocks"
+    },
+    {
+      "id": 227610170,
+      "doc_id": "ihzlnsgwcv62z7d9",
+      "updated": 1752225368000,
+      "properties": {
+        "title": "AWS启动EC2",
+        "urlname": "ihzlnsgwcv62z7d9",
+        "date": "2025-07-11 16:43:16",
+        "updated": "2025-07-11 17:16:08",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1752223561623-3aeb3d51-a3ed-486e-825d-4f988c5aee1a.png",
+        "description": "常见问题启动后通过ssh本机连接，报错：WARNING: UNPROTECTED PRIVATE KEY FILE!解决方案：将密钥文件放在：C:\\Users\\11470\\.ssh文件夹下，然后从改目录打开终端访问"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "ihzlnsgwcv62z7d9"
+        }
+      ],
+      "realName": "AWS启动EC2",
+      "relativePath": "/大数据学习/AWS启动EC2.md",
+      "docPath": "docs/docs/大数据学习"
     }
   ],
   "catalog": [
@@ -1104,7 +1152,7 @@
       "url": "nqmh1oc56skmphz4",
       "prev_uuid": "X52iPYRX02O8gXT5",
       "sibling_uuid": "EX9yYti9IEO_uPYq",
-      "child_uuid": "4SKM5FDUQtE0QyhU",
+      "child_uuid": "Cl2jUUWWIxfVZix7",
       "parent_uuid": "",
       "doc_id": 176198065,
       "level": 0,
@@ -1114,10 +1162,25 @@
     },
     {
       "type": "DOC",
+      "title": "AWS启动EC2",
+      "uuid": "Cl2jUUWWIxfVZix7",
+      "url": "ihzlnsgwcv62z7d9",
+      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "sibling_uuid": "4SKM5FDUQtE0QyhU",
+      "child_uuid": "",
+      "parent_uuid": "IrpnG32GwUNyMBO4",
+      "doc_id": 227610170,
+      "level": 1,
+      "id": 227610170,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "Spark",
       "uuid": "4SKM5FDUQtE0QyhU",
       "url": "xfy5lhrvmqd4d0zr",
-      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "prev_uuid": "Cl2jUUWWIxfVZix7",
       "sibling_uuid": "SnRcE2-GkxXobebS",
       "child_uuid": "",
       "parent_uuid": "IrpnG32GwUNyMBO4",
@@ -1283,7 +1346,7 @@
       "uuid": "iaevxSVMP1SCvZdk",
       "url": "brcwz49v2zyfhh6u",
       "prev_uuid": "w2CNvwO7vBMAaNkD",
-      "sibling_uuid": "v0TX2JitnnChtSO3",
+      "sibling_uuid": "Rv7L-tqAp9bcEy4S",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",
       "doc_id": 216255206,
@@ -1294,10 +1357,25 @@
     },
     {
       "type": "DOC",
+      "title": "部署-详细教程-Ubuntu",
+      "uuid": "Rv7L-tqAp9bcEy4S",
+      "url": "ysrax08t8y15n3kp",
+      "prev_uuid": "iaevxSVMP1SCvZdk",
+      "sibling_uuid": "v0TX2JitnnChtSO3",
+      "child_uuid": "",
+      "parent_uuid": "vybl0kqoMPyu9vl1",
+      "doc_id": 228085301,
+      "level": 2,
+      "id": 228085301,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "部署-详细教程",
       "uuid": "v0TX2JitnnChtSO3",
       "url": "riahu3r39etwuf2q",
-      "prev_uuid": "iaevxSVMP1SCvZdk",
+      "prev_uuid": "Rv7L-tqAp9bcEy4S",
       "sibling_uuid": "KmZq7iP8PQoGFB16",
       "child_uuid": "",
       "parent_uuid": "vybl0kqoMPyu9vl1",

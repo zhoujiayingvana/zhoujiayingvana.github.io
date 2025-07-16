@@ -22,7 +22,7 @@ use1：m6a.large，500GB SSD
 
 能够互相连通：同一个VPC
 
-有公网IP或域名【PRD推荐】，别的机器（例如flink集群）能访问，开启8030端口和9030端口的访问权限
+有内网域名，tauc的k8s集群能访问9030端口连接数据库
 
 三台机器开启fe、be下列端口，能够在机器之间互相访问：
 
@@ -45,7 +45,7 @@ use1：m6a.large，500GB SSD
 > StarRocks 支持在 Red Hat Enterprise Linux 7.9、CentOS Linux 7.9 或 Ubuntu Linux 22.04 上部署。
 >
 
-安装centos7镜像，例如：ami-05128b88cbc44e456
+安装Ubuntu 22.04镜像
 
 ### 更新yum仓库缓存
 `sudo yum update -y`
@@ -229,6 +229,8 @@ sysctl -p
 ```
 
 ## 存储设置
+**EC2上Ubuntu 22.04不支持kyber，使用none**
+
 查看磁盘名称：`lsblk`
 
 ```sql
@@ -240,16 +242,28 @@ nvme0n1     259:0    0   500G  0 disk
 + 磁盘名称：`nvme0n1` 等（不带数字的条目）。
 + 分区名称：`nvme0n1p1` 等（带数字的条目，不是磁盘本身）。
 
-查看调度算法是否为kyber：`cat /sys/block/${磁盘名称}/queue/scheduler`，如果有kyber则支持
+查看调度算法是否为kyber：`cat /sys/block/${磁盘名称}/queue/scheduler`，如果有kyber则支持，如果没有则为ssd磁盘使用none算法
 
-为 SSD 磁盘使用kyber 算法
+为nvme 磁盘使用kyber 算法
+
+```bash
+# 临时变更。
+echo kyber | sudo tee /sys/block/vdb/queue/scheduler
+# 永久变更。
+cat >> /etc/rc.d/rc.local << EOF
+echo kyber | sudo tee /sys/block/${disk}/queue/scheduler
+EOF
+chmod +x /etc/rc.d/rc.local
+```
+
+为xvda磁盘使用none算法
 
 ```bash
 # 临时变更。
 echo none | sudo tee /sys/block/vdb/queue/scheduler
 # 永久变更。
 cat >> /etc/rc.d/rc.local << EOF
-echo kyber | sudo tee /sys/block/${disk}/queue/scheduler
+echo none | sudo tee /sys/block/${disk}/queue/scheduler
 EOF
 chmod +x /etc/rc.d/rc.local
 ```
@@ -258,16 +272,22 @@ chmod +x /etc/rc.d/rc.local
 
 其中[]中选中的单词为当前使用的调度算法
 
-## SELinux
-建议您禁用 SELinux。
+## AppArmor
+建议您禁用 AppArmor。
 
 ```bash
-# 永久变更。
-sed -i 's/SELINUX=.*/SELINUX=disabled/' /etc/selinux/config
-sed -i 's/SELINUXTYPE/#SELINUXTYPE/' /etc/selinux/config
-```
+# =====禁用AppArmor=====
+echo "开始禁用 AppArmor（Ubuntu）..."
 
-**需要重启后才能生效**
+#"停止 AppArmor 服务..."
+systemctl stop apparmor
+
+#"禁用 AppArmor 开机自启..."
+systemctl disable apparmor
+
+# "重新加载 systemd 配置..."
+systemctl daemon-reload
+```
 
 ## LANG 变量
 您需要使用以下命令手动检查和配置 LANG 变量：
@@ -335,7 +355,7 @@ EOF
 df -Th /var/log
 ```
 
-看到诸如"/dev/nvme0n1p1"的分区，type为xfs
+看到诸如"/dev/nvme0n1p1"的分区，type为xfs或者ext4
 
 ## 网络配置
 ### tcp_abort_on_overflow
@@ -436,25 +456,25 @@ echo 200000 > /proc/sys/kernel/pid_max
 
 操作系统选择CentOS/RHEL，版本选择3.3，然后根据点击“下载”获取链接
 
-![](../../../images/a93af89c561e7f613c334dacd8ade5e7.png)
+![](../../../images/bc06d9a960edc8a3665f6a012c063542.png)
 
-一般来说，下载3.3的最新小版本，下载链接格式如下：
+**需要下载3.3的最新小版本，**下载链接格式如下：
 
-[https://releases.mirrorship.cn/starrocks/StarRocks-3.3.15-centos-amd64.tar.gz](https://releases.mirrorship.cn/starrocks/StarRocks-3.3.15-centos-amd64.tar.gz)
+[https://releases.mirrorship.cn/starrocks/StarRocks-3.3.16-ubuntu-amd64.tar.gz](https://releases.mirrorship.cn/starrocks/StarRocks-3.3.16-ubuntu-amd64.tar.gz)
 
 
 
 ### 下载并解压
 ```bash
 cd /tmp
-wget 下载地址  # 例如：wget https://releases.mirrorship.cn/starrocks/StarRocks-3.3.15-centos-amd64.tar.gz
-tar -xzf StarRocks-*-centos-amd64.tar.gz
+wget 下载地址  # 例如：wget https://releases.mirrorship.cn/starrocks/StarRocks-3.3.16-ubuntu-amd64.tar.gz
+tar -xzf StarRocks-*-ubuntu-amd64.tar.gz
 cd /opt
 mkdir -p starrocks
 cd starrocks
 mkdir /opt/starrocks/metadata # 创建元数据目录
 mkdir /opt/starrocks/data # 创建be数据目录
-mv /tmp/StarRocks-*-centos-amd64 /opt/starrocks/sr
+mv /tmp/StarRocks-*-ubuntu-amd64 /opt/starrocks/sr
 ```
 
 
@@ -465,8 +485,13 @@ mv /tmp/StarRocks-*-centos-amd64 /opt/starrocks/sr
 
 
 ### FE配置修改
+1. 修改fe节点可用的jvm内存，参考文档：
+2. 修改网络配置
+3. 修改磁盘空间上线
+4. 允许使用udf
+
 ```bash
-# fe可用的jvm内存，euw1区设为4g
+# fe可用的jvm内存
 JAVA_OPTS="-Dlog4j2.formatMsgNoLookups=true -Xmx4096m -XX:+UseG1GC -Xlog:gc*:${LOG_DIR}/fe.gc.log.$DATE:time -XX:ErrorFile=${LOG_DIR}/hs_err_pid%p.log -Djava.security.policy=${STARROCKS_HOME}/conf/udf_security.policy"
 
 
@@ -491,7 +516,9 @@ edit_log_port = 9010
 ```
 
 ### BE配置修改
-添加存算分离的配置
+1. 修改网络配置
+2. 修改内存使用上限。参考文档：
+3. 修改磁盘使用空间上限
 
 ```bash
 # 网络配置，通过ip -o -f inet addr show | awk '!/127.0.0.1/ {print $4}'来查看
