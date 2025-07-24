@@ -680,12 +680,12 @@
     {
       "id": 213563025,
       "doc_id": "nz5x58pu52zerh6z",
-      "updated": 1747389785000,
+      "updated": 1753361184000,
       "properties": {
         "title": "部署",
         "urlname": "nz5x58pu52zerh6z",
         "date": "2025-04-02 14:25:26",
-        "updated": "2025-05-16 18:03:05",
+        "updated": "2025-07-24 20:46:24",
         "description": "AWS配置能够互相连通：同一个VPC有公网IP或域名，别的机器能访问，开启8030端口和9030端口三台机器开启fe、be全部端口互相访问机器环境访问外网配置网络以启用互联网访问。您将在 Amazon 云中自己的虚拟私有云（VPC）子网中启动实例。子网是您 VPC 中的一个 IP 地址范围。您..."
       },
       "catalog": [
@@ -873,12 +873,12 @@
     {
       "id": 228085301,
       "doc_id": "ysrax08t8y15n3kp",
-      "updated": 1752667135000,
+      "updated": 1752730892000,
       "properties": {
         "title": "部署-详细教程-Ubuntu",
         "urlname": "ysrax08t8y15n3kp",
         "date": "2025-07-15 13:38:17",
-        "updated": "2025-07-16 19:58:55",
+        "updated": "2025-07-17 13:41:32",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751003398148-0d445c4f-0c42-438e-b890-649782f396f3.png",
         "description": "参考文档https://docs.mirrorship.cn/zh/docs/deployment/environment_configurations/https://docs.mirrorship.cn/zh/docs/deployment/prepare_deployment_files..."
       },

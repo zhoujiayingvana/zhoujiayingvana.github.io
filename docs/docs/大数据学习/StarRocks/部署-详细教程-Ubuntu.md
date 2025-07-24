@@ -454,7 +454,7 @@ echo 200000 > /proc/sys/kernel/pid_max
 ### 获取StarRocks下载链接
 查看下载链接地址：[https://www.mirrorship.cn/zh-CN/download/starrocks](https://www.mirrorship.cn/zh-CN/download/starrocks)
 
-操作系统选择CentOS/RHEL，版本选择3.3，然后根据点击“下载”获取链接
+操作系统选择Ubuntu，版本选择3.3，然后根据点击“下载”获取链接
 
 ![](../../../images/bc06d9a960edc8a3665f6a012c063542.png)
 
