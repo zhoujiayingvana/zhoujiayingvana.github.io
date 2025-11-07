@@ -680,12 +680,12 @@
     {
       "id": 213563025,
       "doc_id": "nz5x58pu52zerh6z",
-      "updated": 1753361184000,
+      "updated": 1753407492000,
       "properties": {
         "title": "部署",
         "urlname": "nz5x58pu52zerh6z",
         "date": "2025-04-02 14:25:26",
-        "updated": "2025-07-24 20:46:24",
+        "updated": "2025-07-25 09:38:12",
         "description": "AWS配置能够互相连通：同一个VPC有公网IP或域名，别的机器能访问，开启8030端口和9030端口三台机器开启fe、be全部端口互相访问机器环境访问外网配置网络以启用互联网访问。您将在 Amazon 云中自己的虚拟私有云（VPC）子网中启动实例。子网是您 VPC 中的一个 IP 地址范围。您..."
       },
       "catalog": [
@@ -917,6 +917,27 @@
       "realName": "AWS启动EC2",
       "relativePath": "/大数据学习/AWS启动EC2.md",
       "docPath": "docs/docs/大数据学习"
+    },
+    {
+      "id": 243758432,
+      "doc_id": "ty2hys907y11eh8i",
+      "updated": 1762483498000,
+      "properties": {
+        "title": "EMR资源配置",
+        "urlname": "ty2hys907y11eh8i",
+        "date": "2025-11-07 10:03:08",
+        "updated": "2025-11-07 10:44:58",
+        "description": "Spark配置基本概念 一、核心概念 角色作用运行位置Driver负责调度任务、生成执行计划、协调 executors通常在 YARN 的某个节点上（cluster 模式在core节点）"
+      },
+      "catalog": [
+        {
+          "title": "Airflow",
+          "doc_id": "ty2hys907y11eh8i"
+        }
+      ],
+      "realName": "EMR资源配置",
+      "relativePath": "/Airflow/EMR资源配置.md",
+      "docPath": "docs/docs/Airflow"
     }
   ],
   "catalog": [
@@ -987,7 +1008,7 @@
       "url": "olqnmd66exez6rne",
       "prev_uuid": "j_88hTvhdLCJKHxq",
       "sibling_uuid": "RxbKPuLvXwix3Cdl",
-      "child_uuid": "4eo5S5amdlACFe8X",
+      "child_uuid": "M0LFdzNGA35sBztJ",
       "parent_uuid": "",
       "doc_id": 205101343,
       "level": 0,
@@ -997,10 +1018,25 @@
     },
     {
       "type": "DOC",
+      "title": "EMR资源配置",
+      "uuid": "M0LFdzNGA35sBztJ",
+      "url": "ty2hys907y11eh8i",
+      "prev_uuid": "POMimS74KvjXO0Hm",
+      "sibling_uuid": "4eo5S5amdlACFe8X",
+      "child_uuid": "",
+      "parent_uuid": "POMimS74KvjXO0Hm",
+      "doc_id": 243758432,
+      "level": 1,
+      "id": 243758432,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "最佳实践",
       "uuid": "4eo5S5amdlACFe8X",
       "url": "za78tukohn6db212",
-      "prev_uuid": "POMimS74KvjXO0Hm",
+      "prev_uuid": "M0LFdzNGA35sBztJ",
       "sibling_uuid": "KteAY6Suiss7SioA",
       "child_uuid": "",
       "parent_uuid": "POMimS74KvjXO0Hm",
