@@ -938,6 +938,97 @@
       "realName": "EMR资源配置",
       "relativePath": "/Airflow/EMR资源配置.md",
       "docPath": "docs/docs/Airflow"
+    },
+    {
+      "id": 244187678,
+      "doc_id": "wm8xaa6d5kfev130",
+      "updated": 1762778225000,
+      "properties": {
+        "title": "无标题文档",
+        "urlname": "wm8xaa6d5kfev130",
+        "date": "2025-11-10 20:37:05",
+        "updated": "2025-11-10 20:37:05"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "wm8xaa6d5kfev130"
+        }
+      ],
+      "realName": "无标题文档",
+      "relativePath": "/大数据学习/无标题文档.md",
+      "docPath": "docs/docs/大数据学习"
+    },
+    {
+      "id": 243936495,
+      "doc_id": "og0f56ywhdgvuvc5",
+      "updated": 1762594931000,
+      "properties": {
+        "title": "部署（standalone模式）",
+        "urlname": "og0f56ywhdgvuvc5",
+        "date": "2025-11-08 16:55:20",
+        "updated": "2025-11-08 17:42:11",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1762593760994-5a53256a-ae34-49cd-8aeb-83f60698d918.png",
+        "description": "安装安装jdk 11https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=426&amp;field_architectu..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "og0f56ywhdgvuvc5"
+        },
+        {
+          "title": "Flink",
+          "doc_id": "og0f56ywhdgvuvc5"
+        }
+      ],
+      "realName": "部署（standalone模式）",
+      "relativePath": "/大数据学习/Flink/部署（standalone模式）.md",
+      "docPath": "docs/docs/大数据学习/Flink"
+    },
+    {
+      "id": 244187695,
+      "doc_id": "lhxcg5uqeygadox1",
+      "updated": 1762779496000,
+      "properties": {
+        "title": "学习",
+        "urlname": "lhxcg5uqeygadox1",
+        "date": "2025-11-10 20:37:16",
+        "updated": "2025-11-10 20:58:16",
+        "description": "第1章 状态化流处理概述分类特点案例事件驱动型应用输入：（只能追加）的日志输出：多条处理结果，可存数据库，或发送给下游flink优势：完善的、持久化的状态管理机制、exactly-once语义qoe处理"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "lhxcg5uqeygadox1"
+        },
+        {
+          "title": "Flink",
+          "doc_id": "lhxcg5uqeygadox1"
+        }
+      ],
+      "realName": "学习",
+      "relativePath": "/大数据学习/Flink/学习.md",
+      "docPath": "docs/docs/大数据学习/Flink"
+    },
+    {
+      "id": 243936462,
+      "doc_id": "fiiwf8dgrxbilbqg",
+      "updated": 1762592114000,
+      "properties": {
+        "title": "Flink",
+        "urlname": "fiiwf8dgrxbilbqg",
+        "date": "2025-11-08 16:55:07",
+        "updated": "2025-11-08 16:55:14"
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "fiiwf8dgrxbilbqg"
+        }
+      ],
+      "realName": "Flink",
+      "relativePath": "/大数据学习/Flink.md",
+      "docPath": "docs/docs/大数据学习"
     }
   ],
   "catalog": [
@@ -1188,7 +1279,7 @@
       "url": "nqmh1oc56skmphz4",
       "prev_uuid": "X52iPYRX02O8gXT5",
       "sibling_uuid": "EX9yYti9IEO_uPYq",
-      "child_uuid": "Cl2jUUWWIxfVZix7",
+      "child_uuid": "L3SfkgnnQcB0y1PP",
       "parent_uuid": "",
       "doc_id": 176198065,
       "level": 0,
@@ -1198,10 +1289,70 @@
     },
     {
       "type": "DOC",
+      "title": "无标题文档",
+      "uuid": "L3SfkgnnQcB0y1PP",
+      "url": "wm8xaa6d5kfev130",
+      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "sibling_uuid": "ZdNkswbImDCjMvW2",
+      "child_uuid": "",
+      "parent_uuid": "IrpnG32GwUNyMBO4",
+      "doc_id": 244187678,
+      "level": 1,
+      "id": 244187678,
+      "open_window": 1,
+      "visible": 0
+    },
+    {
+      "type": "DOC",
+      "title": "Flink",
+      "uuid": "ZdNkswbImDCjMvW2",
+      "url": "fiiwf8dgrxbilbqg",
+      "prev_uuid": "L3SfkgnnQcB0y1PP",
+      "sibling_uuid": "Cl2jUUWWIxfVZix7",
+      "child_uuid": "2PP1Eo7un74Uog2z",
+      "parent_uuid": "IrpnG32GwUNyMBO4",
+      "doc_id": 243936462,
+      "level": 1,
+      "id": 243936462,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "学习",
+      "uuid": "2PP1Eo7un74Uog2z",
+      "url": "lhxcg5uqeygadox1",
+      "prev_uuid": "ZdNkswbImDCjMvW2",
+      "sibling_uuid": "cTPthudY9gyA-MQi",
+      "child_uuid": "",
+      "parent_uuid": "ZdNkswbImDCjMvW2",
+      "doc_id": 244187695,
+      "level": 2,
+      "id": 244187695,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "部署（standalone模式）",
+      "uuid": "cTPthudY9gyA-MQi",
+      "url": "og0f56ywhdgvuvc5",
+      "prev_uuid": "2PP1Eo7un74Uog2z",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "ZdNkswbImDCjMvW2",
+      "doc_id": 243936495,
+      "level": 2,
+      "id": 243936495,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "AWS启动EC2",
       "uuid": "Cl2jUUWWIxfVZix7",
       "url": "ihzlnsgwcv62z7d9",
-      "prev_uuid": "IrpnG32GwUNyMBO4",
+      "prev_uuid": "ZdNkswbImDCjMvW2",
       "sibling_uuid": "4SKM5FDUQtE0QyhU",
       "child_uuid": "",
       "parent_uuid": "IrpnG32GwUNyMBO4",
