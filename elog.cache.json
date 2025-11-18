@@ -988,12 +988,13 @@
     {
       "id": 244187695,
       "doc_id": "lhxcg5uqeygadox1",
-      "updated": 1762779496000,
+      "updated": 1763304805000,
       "properties": {
         "title": "学习",
         "urlname": "lhxcg5uqeygadox1",
         "date": "2025-11-10 20:37:16",
-        "updated": "2025-11-10 20:58:16",
+        "updated": "2025-11-16 22:53:25",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1763303934494-9ac3461e-b758-453b-8140-18ef8bdc7670.png",
         "description": "第1章 状态化流处理概述分类特点案例事件驱动型应用输入：（只能追加）的日志输出：多条处理结果，可存数据库，或发送给下游flink优势：完善的、持久化的状态管理机制、exactly-once语义qoe处理"
       },
       "catalog": [
@@ -1013,12 +1014,12 @@
     {
       "id": 243936462,
       "doc_id": "fiiwf8dgrxbilbqg",
-      "updated": 1762592114000,
+      "updated": 1763221436000,
       "properties": {
         "title": "Flink",
         "urlname": "fiiwf8dgrxbilbqg",
         "date": "2025-11-08 16:55:07",
-        "updated": "2025-11-08 16:55:14"
+        "updated": "2025-11-15 23:43:56"
       },
       "catalog": [
         {
@@ -1029,6 +1030,57 @@
       "realName": "Flink",
       "relativePath": "/大数据学习/Flink.md",
       "docPath": "docs/docs/大数据学习"
+    },
+    {
+      "id": 244869155,
+      "doc_id": "bvy5ynxlxv6mwo1c",
+      "updated": 1763288693000,
+      "properties": {
+        "title": "SQL",
+        "urlname": "bvy5ynxlxv6mwo1c",
+        "date": "2025-11-15 20:00:37",
+        "updated": "2025-11-16 18:24:53",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1763214360543-e96fad0b-84e4-4aac-8dc1-bc39116fd2b1.png",
+        "description": "一、时间属性timestamp类型，精确到毫秒事件时间通过WATERMARK，指定某个列为事件时间列create table event_table( user string, url string, ts timestamp(3), WATERMARK FOR ts AS ts - INTE..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "bvy5ynxlxv6mwo1c"
+        },
+        {
+          "title": "Flink",
+          "doc_id": "bvy5ynxlxv6mwo1c"
+        }
+      ],
+      "realName": "SQL",
+      "relativePath": "/大数据学习/Flink/SQL.md",
+      "docPath": "docs/docs/大数据学习/Flink"
+    },
+    {
+      "id": 244878062,
+      "doc_id": "liabld9du2gdfn54",
+      "updated": 1763221430000,
+      "properties": {
+        "title": "概念",
+        "urlname": "liabld9du2gdfn54",
+        "date": "2025-11-15 22:16:22",
+        "updated": "2025-11-15 23:43:50",
+        "description": "乱序和迟到乱序与迟到的区别乱序：数据顺序乱了，时间小的比时间大的晚来。仅在数据之间对比迟到：数据的时间戳 &lt; 当前的watermark。数据时间和watermark对比。有可能迟到的数据来了，但窗口没有触发输出。也有可能迟到的数据来了，但窗口已经触发，默认触发=关闭（要处理的是这些迟到数据）乱..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "liabld9du2gdfn54"
+        },
+        {
+          "title": "Flink",
+          "doc_id": "liabld9du2gdfn54"
+        }
+      ],
+      "realName": "概念",
+      "relativePath": "/大数据学习/Flink/概念.md",
+      "docPath": "docs/docs/大数据学习/Flink"
     }
   ],
   "catalog": [
@@ -1309,7 +1361,7 @@
       "url": "fiiwf8dgrxbilbqg",
       "prev_uuid": "L3SfkgnnQcB0y1PP",
       "sibling_uuid": "Cl2jUUWWIxfVZix7",
-      "child_uuid": "2PP1Eo7un74Uog2z",
+      "child_uuid": "wRqFOhJGAQFmovs6",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 243936462,
       "level": 1,
@@ -1319,10 +1371,40 @@
     },
     {
       "type": "DOC",
+      "title": "概念",
+      "uuid": "wRqFOhJGAQFmovs6",
+      "url": "liabld9du2gdfn54",
+      "prev_uuid": "ZdNkswbImDCjMvW2",
+      "sibling_uuid": "c6u61KqBJlRiGCpX",
+      "child_uuid": "",
+      "parent_uuid": "ZdNkswbImDCjMvW2",
+      "doc_id": 244878062,
+      "level": 2,
+      "id": 244878062,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "SQL",
+      "uuid": "c6u61KqBJlRiGCpX",
+      "url": "bvy5ynxlxv6mwo1c",
+      "prev_uuid": "wRqFOhJGAQFmovs6",
+      "sibling_uuid": "2PP1Eo7un74Uog2z",
+      "child_uuid": "",
+      "parent_uuid": "ZdNkswbImDCjMvW2",
+      "doc_id": 244869155,
+      "level": 2,
+      "id": 244869155,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "学习",
       "uuid": "2PP1Eo7un74Uog2z",
       "url": "lhxcg5uqeygadox1",
-      "prev_uuid": "ZdNkswbImDCjMvW2",
+      "prev_uuid": "c6u61KqBJlRiGCpX",
       "sibling_uuid": "cTPthudY9gyA-MQi",
       "child_uuid": "",
       "parent_uuid": "ZdNkswbImDCjMvW2",
