@@ -921,14 +921,14 @@
     {
       "id": 243758432,
       "doc_id": "ty2hys907y11eh8i",
-      "updated": 1765107645000,
+      "updated": 1765351613000,
       "properties": {
         "title": "EMR资源配置",
         "urlname": "ty2hys907y11eh8i",
         "date": "2025-11-07 10:03:08",
-        "updated": "2025-12-07 19:40:45",
+        "updated": "2025-12-10 15:26:53",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1764847390403-255c961d-7bfa-4d80-8b37-2533c506e109.png",
-        "description": "Spark配置基本概念 一、核心概念 角色作用运行位置资源占用"
+        "description": "EMR架构组件作用Master Node 主节点管理节点（1个主节点 + 可选备用节点），运行 YARN ResourceManager、HDFS NameNodeCore Node"
       },
       "catalog": [
         {

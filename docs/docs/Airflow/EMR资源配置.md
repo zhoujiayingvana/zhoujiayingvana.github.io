@@ -1,11 +1,29 @@
+# EMR架构
+| 组件 | 作用 |
+| --- | --- |
+| **<font style="color:rgb(79, 79, 79);">Master Node 主节点</font>** | <font style="color:rgb(79, 79, 79);">管理节点（1个主节点 + 可选备用节点），运行 YARN ResourceManager、HDFS NameNode</font> |
+| **<font style="color:rgb(79, 79, 79);background-color:rgb(247, 247, 247);">Core Node</font>** | <font style="color:rgb(79, 79, 79);background-color:rgb(247, 247, 247);">存储和计算节点（不可缩容），运行 YARN NodeManager、HDFS DataNode</font> |
+| **<font style="color:rgb(79, 79, 79);">Task Node</font>** | <font style="color:rgb(79, 79, 79);">纯计算节点（可弹性伸缩），仅运行 YARN NodeManager（无存储）</font> |
+
+
+在emr上，spark是yarn模式（cluster模式）运行。emr的一个step对应一个spark application
+
 # Spark配置
 ## 基本概念
+Yarn 架构
+
+![](../../images/38e6ff3b91c2335ad7166b080eb9e9f6.png)
+
+Spark架构
+
+![](../../images/c3187992225c7a1fb4167e77edcb4e12.png)
+
 ![](../../images/390d0a2c4648ba93a71ec280763fb13a.png)
 
 ###  一、核心概念  
 | 角色 | 作用 | 运行位置 | 资源占用 |
 | --- | --- | --- | --- |
-| **Driver** | 负责调度任务、生成执行计划、协调 executors | 通常在 YARN 的某个节点上（cluster 模式在core节点）<br/>一个application（emr 的step）就有1个driver | 通常1核cpu<br/>内存大小可由spark配置 |
+| **Driver** | 负责调度任务、生成执行计划、协调 executors | 通常在 YARN 的某个节点上（cluster 模式在emr core节点）<br/>一个application（emr 的step）就有1个driver | 通常1核cpu<br/>内存大小可由spark配置 |
 | **Executor** | 真正执行 task 的进程（运行 SQL、算子等） | 分布在各个 worker 节点（core/task 节点）上 | cpu和内存由spark配置 |
 | **Task** | 最小的执行单元，一小块数据的计算 | executor里 | executor的核心数设置几，就能并行几个task |
 
@@ -14,10 +32,10 @@
 | 配置项 | 含义 | 示例 | 默认值 |
 | --- | --- | --- | --- |
 | `spark.executor.memory` | 每个 executor 可用内存 | `4g`<br/> → 每个 executor 有 4GB 内存 | 1G |
-| `spark.executor.cores` | 每个 executor 使用的 CPU 核数 | `2`<br/> → 每个 executor 用 2 个 vCPU |  |
+| `spark.executor.cores` | 每个 executor 使用的 CPU 核数 | `2`<br/> → 每个 executor 用 2 个 vCPU | 4 |
 | `spark.driver.memory` | Driver 进程的内存 | `4g`<br/> → 调度进程本身有 4GB 内存 |  |
-| `spark.num.executors` | Executor 的数量（静态） | `N`<br/> → 启动 N 个 executor |  |
-| `spark.executor.instances` | yarn模式下指定的executor数量。如果没有配置，yarn会从`spark.executor.cores`加载 |  如果同时存在，YARN 会优先采用 spark.executor.instances 或 dynamic allocation 的 executor 数。   |  |
+| `spark.num.executors` | Executor 的数量（静态） | `N`<br/> → 启动 N 个 executor | emr默认开启动态分配，参数不生效 |
+| `spark.executor.instances` | yarn模式下指定的executor数量。如果没有配置，yarn会从`spark.executor.cores`加载 |  如果同时存在，YARN 会优先采用 spark.executor.instances 或 dynamic allocation 的 executor 数。   | emr默认开启动态分配，参数不生效 |
 | spark.dynamicAllocation.enabled | 是否动态分配executor数量 | true：动态分配<br/>false：不动态分配<br/>与spark.num.executors互斥，指定了num.executors，则动态分配不生效 | emr里面默认开启，可在spark web UI中查看 |
 | spark.sql.shuffle.partitions |  |  | 200 |
 | spark.default.parallelism | <font style="color:rgb(51, 51, 51);">该参数用于设置每个stage的默认task数量。这个参数极为重要，如果不设置可能会直接影响你的Spark作业性能。</font> |  spark.default.parallelism = max( # 基础值：总核心数 × 2~4 倍（IO密集型取高值，CPU密集型取低值） total_executor_cores * 3,  # 确保至少与数据输入分区数对齐（如 HDFS 文件块数）<br/>input_partitions  <br/>)<br/> EMR（Hadoop 3.x）默认 block size = 128 MB，远大于默认配置 | <font style="color:rgb(51, 51, 51);">Spark自己根据底层</font><font style="color:rgb(0, 82, 217);">HDFS</font><font style="color:rgb(51, 51, 51);">的block数量来设置task的数量，默认是一个HDFS block对应一个task。</font><br/><font style="color:rgb(51, 51, 51);">max(2,total_executor_cores)</font> |
