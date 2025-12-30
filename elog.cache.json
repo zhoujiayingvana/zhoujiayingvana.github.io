@@ -442,14 +442,14 @@
     {
       "id": 197028629,
       "doc_id": "bpsgxm5rz7ghnktn",
-      "updated": 1733208958000,
+      "updated": 1765936705000,
       "properties": {
         "title": "数据建模",
         "urlname": "bpsgxm5rz7ghnktn",
         "date": "2024-12-03 10:40:14",
-        "updated": "2024-12-03 14:55:58",
+        "updated": "2025-12-17 09:58:25",
         "cover": "https://cdn.nlark.com/yuque/0/2024/png/2335953/1733193694793-cba71ffd-4945-4aed-abc5-6b3d6d84359c.png",
-        "description": "数据域"
+        "description": "数据域数据平台架构"
       },
       "catalog": [
         {
@@ -797,12 +797,12 @@
     {
       "id": 225944169,
       "doc_id": "vcsqd1h7f3gn0deo",
-      "updated": 1751365284000,
+      "updated": 1767021502000,
       "properties": {
         "title": "StarRocks介绍",
         "urlname": "vcsqd1h7f3gn0deo",
         "date": "2025-06-30 14:09:49",
-        "updated": "2025-07-01 18:21:24",
+        "updated": "2025-12-29 23:18:22",
         "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1751278145285-2fffdd2e-34e9-4ca0-95ac-d4722c9aa47a.png",
         "description": "背景介绍Cassandra的qoe存储成本过高业务的定时任务随着网络数增加处理时长过长，定时任务中的count等聚合操作存在瓶颈qoe成本优化专项，使用大数据流处理框架+MPP数据库改造qoe链路，降低Cassandra存储成本，提高数据处理速度StarRocks概述参考文档：https://..."
       },
@@ -1082,6 +1082,53 @@
       "realName": "概念",
       "relativePath": "/大数据学习/Flink/概念.md",
       "docPath": "docs/docs/大数据学习/Flink"
+    },
+    {
+      "id": 250387866,
+      "doc_id": "odvf3tf3w3npgipq",
+      "updated": 1767022077000,
+      "properties": {
+        "title": "Spark 学习",
+        "urlname": "odvf3tf3w3npgipq",
+        "date": "2025-12-25 15:46:17",
+        "updated": "2025-12-29 23:27:57",
+        "description": "基本概念RDD： 弹性分布式数据集（resilient distributed dataset），df是rdd的一个实现RDD来源：读取数据集，或者在spark中创建RDD操作：转换transformations and 行动actions transformation：转换，中间过程，返回新..."
+      },
+      "catalog": [
+        {
+          "title": "大数据学习",
+          "doc_id": "odvf3tf3w3npgipq"
+        },
+        {
+          "title": "Spark",
+          "doc_id": "odvf3tf3w3npgipq"
+        }
+      ],
+      "realName": "Spark 学习",
+      "relativePath": "/大数据学习/Spark/Spark 学习.md",
+      "docPath": "docs/docs/大数据学习/Spark"
+    },
+    {
+      "id": 249752850,
+      "doc_id": "bivm12g95egtfhop",
+      "updated": 1766632537000,
+      "properties": {
+        "title": "Spark web UI",
+        "urlname": "bivm12g95egtfhop",
+        "date": "2025-12-21 17:45:37",
+        "updated": "2025-12-25 11:15:37",
+        "cover": "https://cdn.nlark.com/yuque/0/2025/png/2335953/1766310435178-af793bc1-933c-41e9-84fa-f52a11d31d8d.png",
+        "description": "Spark UI 一级入口打开 Spark Ui，首先映入眼帘的是默认的 Jobs 页面。Jobs 页面记录着应用中涉及的 Actions 动作，以及与数据读取、移动有关的动作。其中，每一个 Action 都对应着一个 Job，而每一个 Job 都对应着一个作业。我们一会再去对 Jobs 页面..."
+      },
+      "catalog": [
+        {
+          "title": "Airflow",
+          "doc_id": "bivm12g95egtfhop"
+        }
+      ],
+      "realName": "Spark web UI",
+      "relativePath": "/Airflow/Spark web UI.md",
+      "docPath": "docs/docs/Airflow"
     }
   ],
   "catalog": [
@@ -1152,7 +1199,7 @@
       "url": "olqnmd66exez6rne",
       "prev_uuid": "j_88hTvhdLCJKHxq",
       "sibling_uuid": "RxbKPuLvXwix3Cdl",
-      "child_uuid": "M0LFdzNGA35sBztJ",
+      "child_uuid": "_ujRf-dg5AhIYOwe",
       "parent_uuid": "",
       "doc_id": 205101343,
       "level": 0,
@@ -1162,10 +1209,25 @@
     },
     {
       "type": "DOC",
+      "title": "Spark web UI",
+      "uuid": "_ujRf-dg5AhIYOwe",
+      "url": "bivm12g95egtfhop",
+      "prev_uuid": "POMimS74KvjXO0Hm",
+      "sibling_uuid": "M0LFdzNGA35sBztJ",
+      "child_uuid": "",
+      "parent_uuid": "POMimS74KvjXO0Hm",
+      "doc_id": 249752850,
+      "level": 1,
+      "id": 249752850,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
       "title": "EMR资源配置",
       "uuid": "M0LFdzNGA35sBztJ",
       "url": "ty2hys907y11eh8i",
-      "prev_uuid": "POMimS74KvjXO0Hm",
+      "prev_uuid": "_ujRf-dg5AhIYOwe",
       "sibling_uuid": "4eo5S5amdlACFe8X",
       "child_uuid": "",
       "parent_uuid": "POMimS74KvjXO0Hm",
@@ -1452,11 +1514,26 @@
       "url": "xfy5lhrvmqd4d0zr",
       "prev_uuid": "Cl2jUUWWIxfVZix7",
       "sibling_uuid": "SnRcE2-GkxXobebS",
-      "child_uuid": "",
+      "child_uuid": "r7DwGBjKc1rdnwGM",
       "parent_uuid": "IrpnG32GwUNyMBO4",
       "doc_id": 197768782,
       "level": 1,
       "id": 197768782,
+      "open_window": 1,
+      "visible": 1
+    },
+    {
+      "type": "DOC",
+      "title": "Spark 学习",
+      "uuid": "r7DwGBjKc1rdnwGM",
+      "url": "odvf3tf3w3npgipq",
+      "prev_uuid": "4SKM5FDUQtE0QyhU",
+      "sibling_uuid": "",
+      "child_uuid": "",
+      "parent_uuid": "4SKM5FDUQtE0QyhU",
+      "doc_id": 250387866,
+      "level": 2,
+      "id": 250387866,
       "open_window": 1,
       "visible": 1
     },
